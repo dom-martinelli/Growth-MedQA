@@ -1,0 +1,7 @@
+dataset_key,dataset_name,config,status
+medqa,GBaker/MedQA-USMLE-4-options,,loaded
+medmcqa,openlifescienceai/medmcqa,,loaded
+pubmedqa,qiaojin/PubMedQA,pqa_labeled,loaded
+headqa,,,"FAILED: Could not load any candidate for headqa.
+dvilares/head_qa -> RuntimeError: Dataset scripts are no longer supported, but found head_qa.py
+bigbio/head_qa -> RuntimeError: Dataset scripts are no longer supported, but found head_qa.py"
