@@ -5,3 +5,11 @@ pubmedqa,qiaojin/PubMedQA,pqa_labeled,loaded
 headqa,,,"FAILED: Could not load any candidate for headqa.
 dvilares/head_qa -> RuntimeError: Dataset scripts are no longer supported, but found head_qa.py
 bigbio/head_qa -> RuntimeError: Dataset scripts are no longer supported, but found head_qa.py"
+afrimedqa,afrimedqa/afrimedqa_v2,,loaded
+medical_reasoning,mamachang/medical-reasoning,,loaded
+differential_diagnosis,shuyuej/Differential-Diagnosis-Dataset,,loaded
+medxpertqa,,,"FAILED: Could not load any candidate for medxpertqa.
+TsinghuaC3I/MedXpertQA -> ValueError: Config name is missing.
+Please pick one among the available configs: ['MM', 'Text']
+Example of usage:
+	`load_dataset('TsinghuaC3I/MedXpertQA', 'MM')`"

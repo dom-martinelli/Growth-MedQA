@@ -1,3 +1,5 @@
 add datasets
 https://huggingface.co/datasets/mamachang/medical-reasoning
 https://huggingface.co/datasets/afrimedqa/afrimedqa_v2
+- specialty = "Pediatrics"
+https://huggingface.co/datasets/TsinghuaC3I/MedXpertQA
