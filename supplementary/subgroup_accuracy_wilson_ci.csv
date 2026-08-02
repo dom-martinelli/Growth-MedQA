@@ -1,0 +1,161 @@
+model,dimension,subgroup,n,correct,accuracy_pct,ci95_low,ci95_high
+Gemini 2.5 Pro,growth_relevance,distractor_only,58,49,84.48,73.07,91.62
+Gemini 2.5 Pro,growth_relevance,growth_relevant,901,790,87.68,85.37,89.67
+GPT-5.5,growth_relevance,distractor_only,59,49,83.05,71.54,90.52
+GPT-5.5,growth_relevance,growth_relevant,891,765,85.86,83.42,87.99
+Claude Sonnet 4.6,growth_relevance,distractor_only,59,47,79.66,67.73,87.96
+Claude Sonnet 4.6,growth_relevance,growth_relevant,901,768,85.24,82.77,87.41
+Claude Sonnet 4.5,growth_relevance,distractor_only,59,45,76.27,64.02,85.31
+Claude Sonnet 4.5,growth_relevance,growth_relevant,897,647,72.13,69.11,74.96
+Claude Haiku 4.5,growth_relevance,distractor_only,59,42,71.19,58.62,81.16
+Claude Haiku 4.5,growth_relevance,growth_relevant,890,654,73.48,70.49,76.28
+GPT-4o,growth_relevance,distractor_only,59,47,79.66,67.73,87.96
+GPT-4o,growth_relevance,growth_relevant,901,694,77.03,74.17,79.65
+GPT-4o mini,growth_relevance,distractor_only,59,40,67.8,55.1,78.31
+GPT-4o mini,growth_relevance,growth_relevant,901,589,65.37,62.21,68.41
+Llama 3.3 70B,growth_relevance,distractor_only,59,44,74.58,62.2,83.94
+Llama 3.3 70B,growth_relevance,growth_relevant,900,703,78.11,75.29,80.69
+Llama 3.1 8B,growth_relevance,distractor_only,59,36,61.02,48.27,72.42
+Llama 3.1 8B,growth_relevance,growth_relevant,901,568,63.04,59.84,66.13
+Mistral Small 3.2 24B,growth_relevance,distractor_only,59,39,66.1,53.37,76.86
+Mistral Small 3.2 24B,growth_relevance,growth_relevant,901,559,62.04,58.83,65.15
+Gemini 2.5 Pro,source_dataset,GBaker/MedQA-USMLE-4-options,409,387,94.62,91.99,96.42
+Gemini 2.5 Pro,source_dataset,HiTZ/MedExpQA,8,8,100.0,67.56,100.0
+Gemini 2.5 Pro,source_dataset,JesseLiu/medbulltes5op,15,13,86.67,62.12,96.26
+Gemini 2.5 Pro,source_dataset,TsinghuaC3I/MedXpertQA,89,45,50.56,40.37,60.71
+Gemini 2.5 Pro,source_dataset,adlbh/PediatricsMQA,101,84,83.17,74.69,89.22
+Gemini 2.5 Pro,source_dataset,afrimedqa/afrimedqa_v2,18,16,88.89,67.2,96.9
+Gemini 2.5 Pro,source_dataset,cais/mmlu,12,12,100.0,75.75,100.0
+Gemini 2.5 Pro,source_dataset,openlifescienceai/medmcqa,296,271,91.55,87.83,94.21
+Gemini 2.5 Pro,source_dataset,qiaojin/PubMedQA,11,3,27.27,9.75,56.57
+GPT-5.5,source_dataset,GBaker/MedQA-USMLE-4-options,409,388,94.87,92.28,96.62
+GPT-5.5,source_dataset,HiTZ/MedExpQA,8,8,100.0,67.56,100.0
+GPT-5.5,source_dataset,JesseLiu/medbulltes5op,15,15,100.0,79.61,100.0
+GPT-5.5,source_dataset,TsinghuaC3I/MedXpertQA,79,25,31.65,22.45,42.55
+GPT-5.5,source_dataset,adlbh/PediatricsMQA,101,80,79.21,70.3,85.98
+GPT-5.5,source_dataset,afrimedqa/afrimedqa_v2,18,12,66.67,43.75,83.72
+GPT-5.5,source_dataset,cais/mmlu,12,12,100.0,75.75,100.0
+GPT-5.5,source_dataset,openlifescienceai/medmcqa,297,270,90.91,87.1,93.68
+GPT-5.5,source_dataset,qiaojin/PubMedQA,11,4,36.36,15.17,64.62
+Claude Sonnet 4.6,source_dataset,GBaker/MedQA-USMLE-4-options,409,375,91.69,88.61,93.99
+Claude Sonnet 4.6,source_dataset,HiTZ/MedExpQA,8,8,100.0,67.56,100.0
+Claude Sonnet 4.6,source_dataset,JesseLiu/medbulltes5op,15,14,93.33,70.18,98.81
+Claude Sonnet 4.6,source_dataset,TsinghuaC3I/MedXpertQA,89,39,43.82,33.98,54.17
+Claude Sonnet 4.6,source_dataset,adlbh/PediatricsMQA,101,83,82.18,73.58,88.42
+Claude Sonnet 4.6,source_dataset,afrimedqa/afrimedqa_v2,18,14,77.78,54.78,91.0
+Claude Sonnet 4.6,source_dataset,cais/mmlu,12,12,100.0,75.75,100.0
+Claude Sonnet 4.6,source_dataset,openlifescienceai/medmcqa,297,266,89.56,85.57,92.55
+Claude Sonnet 4.6,source_dataset,qiaojin/PubMedQA,11,4,36.36,15.17,64.62
+Claude Sonnet 4.5,source_dataset,GBaker/MedQA-USMLE-4-options,409,320,78.24,73.99,81.97
+Claude Sonnet 4.5,source_dataset,HiTZ/MedExpQA,8,8,100.0,67.56,100.0
+Claude Sonnet 4.5,source_dataset,JesseLiu/medbulltes5op,15,12,80.0,54.81,92.95
+Claude Sonnet 4.5,source_dataset,TsinghuaC3I/MedXpertQA,85,12,14.12,8.26,23.07
+Claude Sonnet 4.5,source_dataset,adlbh/PediatricsMQA,101,75,74.26,64.95,81.78
+Claude Sonnet 4.5,source_dataset,afrimedqa/afrimedqa_v2,18,13,72.22,49.13,87.5
+Claude Sonnet 4.5,source_dataset,cais/mmlu,12,9,75.0,46.77,91.11
+Claude Sonnet 4.5,source_dataset,openlifescienceai/medmcqa,297,240,80.81,75.95,84.88
+Claude Sonnet 4.5,source_dataset,qiaojin/PubMedQA,11,3,27.27,9.75,56.57
+Claude Haiku 4.5,source_dataset,GBaker/MedQA-USMLE-4-options,409,338,82.64,78.67,86.0
+Claude Haiku 4.5,source_dataset,HiTZ/MedExpQA,8,8,100.0,67.56,100.0
+Claude Haiku 4.5,source_dataset,JesseLiu/medbulltes5op,12,9,75.0,46.77,91.11
+Claude Haiku 4.5,source_dataset,TsinghuaC3I/MedXpertQA,89,18,20.22,13.19,29.72
+Claude Haiku 4.5,source_dataset,adlbh/PediatricsMQA,101,65,64.36,54.65,73.01
+Claude Haiku 4.5,source_dataset,afrimedqa/afrimedqa_v2,18,15,83.33,60.78,94.16
+Claude Haiku 4.5,source_dataset,cais/mmlu,12,12,100.0,75.75,100.0
+Claude Haiku 4.5,source_dataset,openlifescienceai/medmcqa,289,227,78.55,73.46,82.89
+Claude Haiku 4.5,source_dataset,qiaojin/PubMedQA,11,4,36.36,15.17,64.62
+GPT-4o,source_dataset,GBaker/MedQA-USMLE-4-options,409,349,85.33,81.57,88.43
+GPT-4o,source_dataset,HiTZ/MedExpQA,8,8,100.0,67.56,100.0
+GPT-4o,source_dataset,JesseLiu/medbulltes5op,15,12,80.0,54.81,92.95
+GPT-4o,source_dataset,TsinghuaC3I/MedXpertQA,89,24,26.97,18.84,37.0
+GPT-4o,source_dataset,adlbh/PediatricsMQA,101,70,69.31,59.74,77.46
+GPT-4o,source_dataset,afrimedqa/afrimedqa_v2,18,13,72.22,49.13,87.5
+GPT-4o,source_dataset,cais/mmlu,12,12,100.0,75.75,100.0
+GPT-4o,source_dataset,openlifescienceai/medmcqa,297,249,83.84,79.22,87.59
+GPT-4o,source_dataset,qiaojin/PubMedQA,11,4,36.36,15.17,64.62
+GPT-4o mini,source_dataset,GBaker/MedQA-USMLE-4-options,409,291,71.15,66.58,75.33
+GPT-4o mini,source_dataset,HiTZ/MedExpQA,8,7,87.5,52.91,97.76
+GPT-4o mini,source_dataset,JesseLiu/medbulltes5op,15,11,73.33,48.05,89.1
+GPT-4o mini,source_dataset,TsinghuaC3I/MedXpertQA,89,13,14.61,8.74,23.4
+GPT-4o mini,source_dataset,adlbh/PediatricsMQA,101,63,62.38,52.64,71.21
+GPT-4o mini,source_dataset,afrimedqa/afrimedqa_v2,18,13,72.22,49.13,87.5
+GPT-4o mini,source_dataset,cais/mmlu,12,12,100.0,75.75,100.0
+GPT-4o mini,source_dataset,openlifescienceai/medmcqa,297,215,72.39,67.04,77.16
+GPT-4o mini,source_dataset,qiaojin/PubMedQA,11,4,36.36,15.17,64.62
+Llama 3.3 70B,source_dataset,GBaker/MedQA-USMLE-4-options,409,350,85.57,81.84,88.65
+Llama 3.3 70B,source_dataset,HiTZ/MedExpQA,8,8,100.0,67.56,100.0
+Llama 3.3 70B,source_dataset,JesseLiu/medbulltes5op,15,11,73.33,48.05,89.1
+Llama 3.3 70B,source_dataset,TsinghuaC3I/MedXpertQA,89,18,20.22,13.19,29.72
+Llama 3.3 70B,source_dataset,adlbh/PediatricsMQA,101,73,72.28,62.85,80.07
+Llama 3.3 70B,source_dataset,afrimedqa/afrimedqa_v2,18,13,72.22,49.13,87.5
+Llama 3.3 70B,source_dataset,cais/mmlu,12,12,100.0,75.75,100.0
+Llama 3.3 70B,source_dataset,openlifescienceai/medmcqa,296,259,87.5,83.25,90.79
+Llama 3.3 70B,source_dataset,qiaojin/PubMedQA,11,3,27.27,9.75,56.57
+Llama 3.1 8B,source_dataset,GBaker/MedQA-USMLE-4-options,409,266,65.04,60.29,69.5
+Llama 3.1 8B,source_dataset,HiTZ/MedExpQA,8,7,87.5,52.91,97.76
+Llama 3.1 8B,source_dataset,JesseLiu/medbulltes5op,15,5,33.33,15.18,58.29
+Llama 3.1 8B,source_dataset,TsinghuaC3I/MedXpertQA,89,12,13.48,7.88,22.1
+Llama 3.1 8B,source_dataset,adlbh/PediatricsMQA,101,60,59.41,49.65,68.47
+Llama 3.1 8B,source_dataset,afrimedqa/afrimedqa_v2,18,12,66.67,43.75,83.72
+Llama 3.1 8B,source_dataset,cais/mmlu,12,12,100.0,75.75,100.0
+Llama 3.1 8B,source_dataset,openlifescienceai/medmcqa,297,226,76.09,70.93,80.59
+Llama 3.1 8B,source_dataset,qiaojin/PubMedQA,11,4,36.36,15.17,64.62
+Mistral Small 3.2 24B,source_dataset,GBaker/MedQA-USMLE-4-options,409,266,65.04,60.29,69.5
+Mistral Small 3.2 24B,source_dataset,HiTZ/MedExpQA,8,7,87.5,52.91,97.76
+Mistral Small 3.2 24B,source_dataset,JesseLiu/medbulltes5op,15,9,60.0,35.75,80.18
+Mistral Small 3.2 24B,source_dataset,TsinghuaC3I/MedXpertQA,89,17,19.1,12.28,28.48
+Mistral Small 3.2 24B,source_dataset,adlbh/PediatricsMQA,101,60,59.41,49.65,68.47
+Mistral Small 3.2 24B,source_dataset,afrimedqa/afrimedqa_v2,18,10,55.56,33.72,75.44
+Mistral Small 3.2 24B,source_dataset,cais/mmlu,12,11,91.67,64.61,98.51
+Mistral Small 3.2 24B,source_dataset,openlifescienceai/medmcqa,297,214,72.05,66.69,76.85
+Mistral Small 3.2 24B,source_dataset,qiaojin/PubMedQA,11,4,36.36,15.17,64.62
+Gemini 2.5 Pro,usmle_competency_area,Communication - Providing Information,3,3,100.0,43.85,100.0
+Gemini 2.5 Pro,usmle_competency_area,Medical Knowledge/Scientific Concepts,342,309,90.35,86.76,93.05
+Gemini 2.5 Pro,usmle_competency_area,Patient Care,605,519,85.79,82.78,88.34
+Gemini 2.5 Pro,usmle_competency_area,Practice-based Learning - Biostatistics and Epidemiology,8,7,87.5,52.91,97.76
+Gemini 2.5 Pro,usmle_competency_area,Systems-based Practice,1,1,100.0,20.65,100.0
+GPT-5.5,usmle_competency_area,Communication - Providing Information,3,2,66.67,20.77,93.85
+GPT-5.5,usmle_competency_area,Medical Knowledge/Scientific Concepts,338,298,88.17,84.29,91.19
+GPT-5.5,usmle_competency_area,Patient Care,600,505,84.17,81.03,86.87
+GPT-5.5,usmle_competency_area,Practice-based Learning - Biostatistics and Epidemiology,8,8,100.0,67.56,100.0
+GPT-5.5,usmle_competency_area,Systems-based Practice,1,1,100.0,20.65,100.0
+Claude Sonnet 4.6,usmle_competency_area,Communication - Providing Information,3,2,66.67,20.77,93.85
+Claude Sonnet 4.6,usmle_competency_area,Medical Knowledge/Scientific Concepts,342,300,87.72,83.82,90.78
+Claude Sonnet 4.6,usmle_competency_area,Patient Care,606,504,83.17,79.98,85.94
+Claude Sonnet 4.6,usmle_competency_area,Practice-based Learning - Biostatistics and Epidemiology,8,8,100.0,67.56,100.0
+Claude Sonnet 4.6,usmle_competency_area,Systems-based Practice,1,1,100.0,20.65,100.0
+Claude Sonnet 4.5,usmle_competency_area,Communication - Providing Information,3,2,66.67,20.77,93.85
+Claude Sonnet 4.5,usmle_competency_area,Medical Knowledge/Scientific Concepts,342,245,71.64,66.64,76.15
+Claude Sonnet 4.5,usmle_competency_area,Patient Care,602,440,73.09,69.41,76.48
+Claude Sonnet 4.5,usmle_competency_area,Practice-based Learning - Biostatistics and Epidemiology,8,5,62.5,30.57,86.32
+Claude Sonnet 4.5,usmle_competency_area,Systems-based Practice,1,0,0.0,0.0,79.35
+Claude Haiku 4.5,usmle_competency_area,Communication - Providing Information,3,2,66.67,20.77,93.85
+Claude Haiku 4.5,usmle_competency_area,Medical Knowledge/Scientific Concepts,338,242,71.6,66.57,76.14
+Claude Haiku 4.5,usmle_competency_area,Patient Care,599,447,74.62,70.99,77.94
+Claude Haiku 4.5,usmle_competency_area,Practice-based Learning - Biostatistics and Epidemiology,8,5,62.5,30.57,86.32
+Claude Haiku 4.5,usmle_competency_area,Systems-based Practice,1,0,0.0,0.0,79.35
+GPT-4o,usmle_competency_area,Communication - Providing Information,3,2,66.67,20.77,93.85
+GPT-4o,usmle_competency_area,Medical Knowledge/Scientific Concepts,342,271,79.24,74.63,83.2
+GPT-4o,usmle_competency_area,Patient Care,606,460,75.91,72.35,79.14
+GPT-4o,usmle_competency_area,Practice-based Learning - Biostatistics and Epidemiology,8,8,100.0,67.56,100.0
+GPT-4o,usmle_competency_area,Systems-based Practice,1,0,0.0,0.0,79.35
+GPT-4o mini,usmle_competency_area,Communication - Providing Information,3,2,66.67,20.77,93.85
+GPT-4o mini,usmle_competency_area,Medical Knowledge/Scientific Concepts,342,219,64.04,58.82,68.94
+GPT-4o mini,usmle_competency_area,Patient Care,606,403,66.5,62.65,70.15
+GPT-4o mini,usmle_competency_area,Practice-based Learning - Biostatistics and Epidemiology,8,5,62.5,30.57,86.32
+GPT-4o mini,usmle_competency_area,Systems-based Practice,1,0,0.0,0.0,79.35
+Llama 3.3 70B,usmle_competency_area,Communication - Providing Information,3,2,66.67,20.77,93.85
+Llama 3.3 70B,usmle_competency_area,Medical Knowledge/Scientific Concepts,341,275,80.65,76.12,84.49
+Llama 3.3 70B,usmle_competency_area,Patient Care,606,463,76.4,72.86,79.61
+Llama 3.3 70B,usmle_competency_area,Practice-based Learning - Biostatistics and Epidemiology,8,6,75.0,40.93,92.85
+Llama 3.3 70B,usmle_competency_area,Systems-based Practice,1,1,100.0,20.65,100.0
+Llama 3.1 8B,usmle_competency_area,Communication - Providing Information,3,2,66.67,20.77,93.85
+Llama 3.1 8B,usmle_competency_area,Medical Knowledge/Scientific Concepts,342,213,62.28,57.03,67.25
+Llama 3.1 8B,usmle_competency_area,Patient Care,606,385,63.53,59.62,67.27
+Llama 3.1 8B,usmle_competency_area,Practice-based Learning - Biostatistics and Epidemiology,8,4,50.0,21.52,78.48
+Llama 3.1 8B,usmle_competency_area,Systems-based Practice,1,0,0.0,0.0,79.35
+Mistral Small 3.2 24B,usmle_competency_area,Communication - Providing Information,3,2,66.67,20.77,93.85
+Mistral Small 3.2 24B,usmle_competency_area,Medical Knowledge/Scientific Concepts,342,211,61.7,56.44,66.69
+Mistral Small 3.2 24B,usmle_competency_area,Patient Care,606,378,62.38,58.45,66.14
+Mistral Small 3.2 24B,usmle_competency_area,Practice-based Learning - Biostatistics and Epidemiology,8,6,75.0,40.93,92.85
+Mistral Small 3.2 24B,usmle_competency_area,Systems-based Practice,1,1,100.0,20.65,100.0

@@ -1,0 +1,5 @@
+criterion_failed,representative_benchmark,reason
+Natively English,HEAD-QA,Distributed via Spanish-to-English machine translation; MT flips patient sex in a substantial share of female-marked stems
+MCQ format compatibility,RareBench,"Diagnostic ranking task, not single fixed-answer MCQ"
+MCQ format compatibility,MedCalc-Bench,"Clinical calculation execution, not fixed-answer MCQ"
+Text-based,Image-dependent multimodal items,"Require a figure, chart, or radiograph not shipped as text"

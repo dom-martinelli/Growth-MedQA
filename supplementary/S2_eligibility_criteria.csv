@@ -1,0 +1,7 @@
+criterion,scope_description,rationale
+Text-based,"Answerable from text alone; no required image, chart, or table",The models evaluated in this study are scored on text only
+Natively English,"Source distributed in English, not machine-translated","Machine translation can corrupt clinical meaning (e.g. patient sex, measurements)"
+Publicly accessible (non-commercial research),Freely obtainable for research use,Reproducibility and lawful redistribution of derived labels
+Fixed-answer / single ground truth,Scoreable against one correct option,Enables exact-answer accuracy scoring
+Non-redundant with an included parent,Not a re-release or subset of an already-included dataset,Avoids double-counting the same items
+MCQ format compatibility,Exact-answer multiple choice (not free calculation or ranking),"Calculation and ranking are documented as separate task families, not scored here"
