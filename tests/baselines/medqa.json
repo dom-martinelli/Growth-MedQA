@@ -1,0 +1,13 @@
+{
+  "file": "medqa_pediatric_questions.csv",
+  "note": "MedQA. The largest contributor to the pool; watched for duplicates against the other sources.",
+  "recorded": "2026-11-18",
+  "rows": 2847,
+  "counts": {
+    "rt_deletion_rows": 0,
+    "unscoreable_items": 0,
+    "items_with_no_key": 0,
+    "duplicate_stems": 0,
+    "repeated_ids": 0
+  }
+}

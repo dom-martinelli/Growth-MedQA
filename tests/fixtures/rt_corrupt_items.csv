@@ -1,0 +1,7 @@
+id,question,options,label
+RT-1,A 4-year-old has a murmur. Which chamber of the hea is enlarged?,"{'A': 'left atrium', 'B': 'right atrium', 'C': 'left ventricle', 'D': 'right ventricle'}",C
+RT-2,What was the bih weight recorded at delivery?,"{'A': '2.4 kg', 'B': '3.1 kg', 'C': '3.8 kg', 'D': '4.2 kg'}",B
+RT-3,The pulmonary aery pressure in this infant is best estimated by which study?,"{'A': 'echocardiography', 'B': 'chest radiograph', 'C': 'spirometry', 'D': 'blood culture'}",A
+RT-4,It is impoant to confirm which value before plotting the point?,"{'A': 'the recumbent length', 'B': 'the head shape', 'C': 'the sibling height', 'D': 'the clinic time'}",A
+RT-5,The child is sho for age and the parents are of average height. What is the next step?,"{'A': 'repeat the measurement', 'B': 'order an MRI', 'C': 'start growth hormone', 'D': 'no follow-up'}",A
+RT-6,Both the hea and the bih record are missing from the chart. Which is retrieved first?,"{'A': 'the newborn summary', 'B': 'the growth chart', 'C': 'the immunisation record', 'D': 'the allergy list'}",A

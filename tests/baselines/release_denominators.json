@@ -1,0 +1,82 @@
+{
+  "note": "Recorded facts about the release artifacts, frozen so a change fails a test. The per-model gap between scored_in_predictions and denominator_in_table is exactly the 13 unparsed-but-scored rows (Haiku 11, Gemini 2.5 Pro 1, Llama 3.3 70B 1); see qa.release_checks.check_unparsed_encoding. If a gap changes by any other amount, that explanation no longer holds.",
+  "recorded": "2026-11-19",
+  "totals": {
+    "prediction_rows": 21120,
+    "models": 22,
+    "items": 960,
+    "scored_rows": 20772,
+    "unparsed_rows": 361
+  },
+  "unparsed_by_model": {
+    "Claude Haiku 4.5": 11,
+    "Claude Opus 4.8": 39,
+    "Claude Sonnet 4.5": 4,
+    "DeepSeek Chat": 15,
+    "DeepSeek V4 Flash": 2,
+    "GLM 4.7": 77,
+    "GPT-5.5": 10,
+    "GPT-OSS 120B": 10,
+    "Gemini 2.5 Flash": 8,
+    "Gemini 2.5 Pro": 1,
+    "Gemma 3 27B": 13,
+    "Kimi K2 Thinking": 72,
+    "Llama 3.3 70B": 1,
+    "Llama 4 Scout": 26,
+    "Nemotron 3 Super": 5,
+    "Qwen 2.5 72B": 41,
+    "Qwen3 235B": 26
+  },
+  "per_model": {
+    "Claude Haiku 4.5": {
+      "scored_in_predictions": 960,
+      "denominator_in_table": 949,
+      "gap": 11
+    },
+    "Claude Sonnet 4.5": {
+      "scored_in_predictions": 956,
+      "denominator_in_table": 956,
+      "gap": 0
+    },
+    "Claude Sonnet 4.6": {
+      "scored_in_predictions": 960,
+      "denominator_in_table": 960,
+      "gap": 0
+    },
+    "GPT-4o": {
+      "scored_in_predictions": 960,
+      "denominator_in_table": 960,
+      "gap": 0
+    },
+    "GPT-4o mini": {
+      "scored_in_predictions": 960,
+      "denominator_in_table": 960,
+      "gap": 0
+    },
+    "GPT-5.5": {
+      "scored_in_predictions": 950,
+      "denominator_in_table": 950,
+      "gap": 0
+    },
+    "Gemini 2.5 Pro": {
+      "scored_in_predictions": 960,
+      "denominator_in_table": 959,
+      "gap": 1
+    },
+    "Llama 3.1 8B": {
+      "scored_in_predictions": 960,
+      "denominator_in_table": 960,
+      "gap": 0
+    },
+    "Llama 3.3 70B": {
+      "scored_in_predictions": 960,
+      "denominator_in_table": 959,
+      "gap": 1
+    },
+    "Mistral Small 3.2 24B": {
+      "scored_in_predictions": 960,
+      "denominator_in_table": 960,
+      "gap": 0
+    }
+  }
+}

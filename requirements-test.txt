@@ -1,0 +1,7 @@
+# Everything the test suite needs.
+#
+# Deliberately just pytest. The checks in qa/ use only csv, re and math from the
+# standard library, so CI has nothing to resolve and the suite cannot break
+# because a numeric library changed a default. The release's own reproduce.py
+# needs pandas; that is a separate dependency and a separate concern.
+pytest>=8.0

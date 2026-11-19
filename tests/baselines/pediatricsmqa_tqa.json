@@ -1,0 +1,13 @@
+{
+  "file": "pediatricsmqa_tqa_pediatric_questions.csv",
+  "note": "PediatricsMQA, TQA split.",
+  "recorded": "2026-11-18",
+  "rows": 3417,
+  "counts": {
+    "rt_deletion_rows": 0,
+    "unscoreable_items": 0,
+    "items_with_no_key": 0,
+    "duplicate_stems": 62,
+    "repeated_ids": 0
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "file": "medbullets_pediatric_questions.csv",
+  "note": "Medbullets.",
+  "recorded": "2026-11-18",
+  "rows": 74,
+  "counts": {
+    "rt_deletion_rows": 0,
+    "unscoreable_items": 0,
+    "items_with_no_key": 0,
+    "duplicate_stems": 1,
+    "repeated_ids": 0
+  }
+}

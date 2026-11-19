@@ -1,0 +1,13 @@
+{
+  "file": "medmcqa_pediatric_questions.csv",
+  "note": "openlifescienceai/medmcqa. Carries the rt-deletion corruption in the source rows, which defeats keyword curation.",
+  "recorded": "2026-11-18",
+  "rows": 7457,
+  "counts": {
+    "rt_deletion_rows": 1451,
+    "unscoreable_items": 6,
+    "items_with_no_key": 0,
+    "duplicate_stems": 4,
+    "repeated_ids": 0
+  }
+}

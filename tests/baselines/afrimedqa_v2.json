@@ -1,0 +1,13 @@
+{
+  "file": "afrimedqa_v2_pediatric_questions.csv",
+  "note": "AfriMed-QA v2. Localised from a shared parent, so duplicate stems across sources are expected and need to be counted, not assumed.",
+  "recorded": "2026-11-18",
+  "rows": 1590,
+  "counts": {
+    "rt_deletion_rows": 0,
+    "unscoreable_items": 35,
+    "items_with_no_key": 0,
+    "duplicate_stems": 23,
+    "repeated_ids": 0
+  }
+}

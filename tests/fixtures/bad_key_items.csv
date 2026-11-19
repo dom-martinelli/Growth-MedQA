@@ -1,0 +1,6 @@
+id,question,options,label
+KEY-1,Which growth parameter is plotted against age?,"{'A': 'height', 'B': 'weight', 'C': 'head circumference', 'D': 'all of the above'}",E
+KEY-2,At what age does the CDC chart replace the WHO chart?,"{'A': '12 months', 'B': '24 months', 'C': '36 months', 'D': '48 months'}",F
+KEY-3,Which measurement is taken recumbent under 2 years?,"{'A': 'length', 'B': 'standing height', 'C': 'arm span', 'D': 'sitting height'}",
+KEY-4,Which chart is used for a preterm infant after term-corrected age?,"{'A': 'Fenton', 'B': 'WHO', 'C': 'CDC', 'D': 'Olsen'}",B
+KEY-5,A z-score of -2 corresponds to approximately which percentile?,"{'A': 'the 2nd', 'B': 'the 5th', 'C': 'the 10th', 'D': 'the 25th'}",2nd percentile

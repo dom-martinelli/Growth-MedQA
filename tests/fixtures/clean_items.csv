@@ -1,0 +1,9 @@
+id,question,options,label
+CLEAN-1,A healthy child presents for a routine visit. Which measurement belongs on the growth chart?,"{'A': 'height', 'B': 'heart rate', 'C': 'shoulder width', 'D': 'birth order'}",A
+CLEAN-2,Which part of the record carries the birth weight?,"{'A': 'the newborn summary', 'B': 'the discharge note', 'C': 'the radiology report', 'D': 'the billing codes'}",A
+CLEAN-3,Shortness of breath on exertion in a 9-year-old is most consistent with which finding?,"{'A': 'exercise-induced bronchoconstriction', 'B': 'heat exhaustion', 'C': 'a short femur', 'D': 'a quarter-inch scar'}",A
+CLEAN-4,An important consideration before plotting a single height is which of the following?,"{'A': 'the measurement technique', 'B': 'the cortical thickness', 'C': 'the vertebral count', 'D': 'the portal pressure'}",A
+CLEAN-5,Arterial blood gas sampling in a neonate is reported from which vessel?,"{'A': 'the umbilical artery', 'B': 'the heart', 'C': 'the aorta only', 'D': 'the portal vein'}",A
+CLEAN-6,Which starts first in the standard growth assessment?,"{'A': 'the measurement', 'B': 'the referral', 'C': 'the bone age', 'D': 'the support letter'}",A
+CLEAN-7,A neonate with ABO incompatibility and jaundice is managed how?,"{'A': 'phototherapy', 'B': 'exchange transfusion only', 'C': 'no treatment', 'D': 'immediate surgery'}",A
+CLEAN-8,The cytoplasm is PAS positive and diastase digestible. Which is suggested?,"{'A': 'glycogen storage', 'B': 'amyloid', 'C': 'iron', 'D': 'melanin'}",A

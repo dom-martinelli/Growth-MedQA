@@ -1,0 +1,56 @@
+name: tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: tests-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  checks:
+    name: release artifacts and data-quality checks
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements-test.txt
+
+      # Both release artifacts are committed here, so this job needs no data and
+      # no numeric stack: the checks use csv, re and math only. It verifies the
+      # published numbers against themselves, which is the part a reader assumes
+      # has already been done.
+      - name: pytest
+        run: python -m pytest tests -q
+
+      # The same checks as a readable report on the run summary, so a reviewer
+      # can see what was verified without opening the log.
+      - name: report
+        if: ${{ !cancelled() }}
+        run: |
+          {
+            echo '## Release artifact checks'
+            echo '```'
+            python -m qa.release_checks
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+  reproduce:
+    name: reproduce.py runs
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pandas
+      # The README tells a reader to run exactly this. A reproducibility package
+      # whose one documented command has never been run in a clean environment
+      # is a promise, not a package.
+      - name: python reproduce.py
+        run: python reproduce.py
