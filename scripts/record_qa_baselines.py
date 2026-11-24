@@ -28,11 +28,16 @@ REPO = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(REPO))
 
 from qa.dataset_checks import (  # noqa: E402
+    duplicate_options,
     duplicate_questions,
     ids_unique,
+    key_conflicts,
     keyed_answer_outside_options,
+    multi_answer_keys,
+    placeholder_options,
     read_rows,
     rt_deletions,
+    unreadable_options,
 )
 
 EXTRACTS = Path(
@@ -94,6 +99,14 @@ def record(key: str, filename: str, note: str) -> dict | None:
             "items_with_no_key": _count(keys, "items with no key"),
             "duplicate_stems": _count(duplicate_questions(rows), "stems appearing more than once"),
             "repeated_ids": _count(ids_unique(rows), "values used by more than one row"),
+            "duplicate_option_items": _count(duplicate_options(rows), "same answer twice"),
+            "duplicate_option_keyed": _count(duplicate_options(rows), "both the keyed answer"),
+            "placeholder_option_items": _count(placeholder_options(rows), "padded with a filler"),
+            "placeholder_is_key": _count(placeholder_options(rows), "key IS the filler"),
+            "unreadable_option_items": _count(unreadable_options(rows), "text-free options"),
+            "multi_answer_keys": _count(multi_answer_keys(rows), "single-answer scorer cannot score"),
+            "key_conflict_stems": _count(key_conflicts(rows), "identical stems whose keys disagree"),
+            "key_conflict_different_answer": _count(key_conflicts(rows), "different answer"),
         },
     }
     BASELINES.mkdir(parents=True, exist_ok=True)

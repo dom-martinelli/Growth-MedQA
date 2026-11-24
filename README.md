@@ -112,6 +112,76 @@ pools. The detectors are tested against hand-written fixtures before being
 pointed at the data, because "0 findings" reads the same whether the pool is
 clean or the pattern is broken.
 
+#### What the option and key checks found
+
+Counts are for the pediatric extracts, not the full upstream datasets. An item
+can carry more than one defect, so these overlap and must not be added up.
+
+| | MedMCQA (7,457) | AfriMed-QA (1,590) | PediatricsMQA (3,417) | MedQA (2,847) |
+|---|---|---|---|---|
+| same answer offered twice | 34 | 13 | 5 | 1 |
+| ...and the key points at it | **21** | 3 | 1 | 1 |
+| two or more options are markup with no text | 7 | 0 | 0 | 0 |
+| padded with a filler option ("n/a") | 3 | 192 | 199 | 1 |
+| ...and the key IS the filler | 1 | 0 | 0 | 1 |
+| select-all items keyed as a list | 0 | 35 | 0 | 0 |
+| identical stems whose keys disagree | 144 | 0 | 7 | 0 |
+
+Three of those need reading carefully.
+
+**The 21 MedMCQA items where the key points at duplicated text** are the clearest
+scoring defect in any of these pools: two options are word for word the same,
+one is accepted and the other is marked wrong. A model that gives the right
+answer loses the point for picking the wrong copy of it.
+
+**The 144 disagreeing keys are not 144 contradictions.** Two copies of one
+question usually carry the same answer written twice, so `key_conflicts`
+decomposes them instead of reporting the total: 62 are a different answer, 32
+differ only in spacing, 25 are typo twins, 16 are rt-deletion twins (one copy
+corrupted), and 9 are one answer truncating the other. Only the 62 are a
+disagreement about medicine, and that is an upper bound. Numeric answers are
+never classed as typos, because `350 g` and `350 mg` are one character apart and
+a thousandfold apart.
+
+**AfriMed-QA's 35 select-all items are not defective, they are a different
+question type**, keyed as `option2,option3`. They matter because a single-answer
+harness cannot score them: marked wrong by default they cost a model accuracy
+for a question nobody asked it, and dropped silently they move the denominator
+without saying so.
+
+Matching for the key-conflict check is exact normalised stem text, which makes
+it a lower bound. Near-duplicates across datasets need embeddings and a
+judgement about whether two differently worded items ask the same clinical
+question; that analysis is separate, more expensive, and finds cases this
+cannot. In the pediatric slices, exact cross-dataset stem matches between
+AfriMed-QA and MedMCQA number **1**, with no key conflict, so the deterministic
+check has essentially nothing to say about the cross-dataset question.
+
+#### How much of it reached the scored items
+
+`scripts/curated_defect_report.py` joins the harmonised pool against the scored
+set on `harmonized_id` and reports what the models were actually graded on.
+**92 of the 960 scored items (9.6%) carry at least one known defect:**
+
+| defect | scored items | source |
+|---|---|---|
+| rt-deletion in the item text | 74 | all MedMCQA |
+| padded with a filler option | 19 | 12 AfriMed-QA, 7 MedMCQA |
+| duplicate option, key points at it, options are markup | 1 | `medmcqa::36109` |
+
+`medmcqa::36109` is worth looking at on its own. Its options A, B and C are each
+the string `<img style="max-width: 100%" src=" />`, an image tag with an empty
+source, and the key is A. The figure never reached the dataset. The item is not
+difficult, it is unanswerable, and it is in the scored set contributing to every
+model's accuracy.
+
+The join is asserted, not assumed: the script checks that all 960 scored items
+were found in the pool and warns loudly otherwise. The reason is a mistake worth
+recording. The per-source extracts use their own identifiers (MedMCQA UUIDs,
+AfriMed-QA sha hashes) and share **no** id with the curated set, whose ids are
+row indices like `medmcqa::100392`. Joining on those returns zero defects for
+every check on every item, which reads exactly like a clean benchmark.
+
 ### A note on the MedXpertQA exclusion
 
 Items excluded for having a key outside the A-E options are not an upstream

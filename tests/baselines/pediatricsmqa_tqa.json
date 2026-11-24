@@ -1,13 +1,21 @@
 {
   "file": "pediatricsmqa_tqa_pediatric_questions.csv",
   "note": "PediatricsMQA, TQA split.",
-  "recorded": "2026-11-18",
+  "recorded": "2026-11-23",
   "rows": 3417,
   "counts": {
     "rt_deletion_rows": 0,
     "unscoreable_items": 0,
     "items_with_no_key": 0,
     "duplicate_stems": 62,
-    "repeated_ids": 0
+    "repeated_ids": 0,
+    "duplicate_option_items": 5,
+    "duplicate_option_keyed": 1,
+    "placeholder_option_items": 199,
+    "placeholder_is_key": 0,
+    "unreadable_option_items": 0,
+    "multi_answer_keys": 0,
+    "key_conflict_stems": 7,
+    "key_conflict_different_answer": 7
   }
 }

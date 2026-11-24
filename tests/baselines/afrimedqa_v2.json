@@ -1,13 +1,21 @@
 {
   "file": "afrimedqa_v2_pediatric_questions.csv",
   "note": "AfriMed-QA v2. Localised from a shared parent, so duplicate stems across sources are expected and need to be counted, not assumed.",
-  "recorded": "2026-11-18",
+  "recorded": "2026-11-23",
   "rows": 1590,
   "counts": {
     "rt_deletion_rows": 0,
     "unscoreable_items": 35,
     "items_with_no_key": 0,
     "duplicate_stems": 23,
-    "repeated_ids": 0
+    "repeated_ids": 0,
+    "duplicate_option_items": 13,
+    "duplicate_option_keyed": 3,
+    "placeholder_option_items": 192,
+    "placeholder_is_key": 0,
+    "unreadable_option_items": 0,
+    "multi_answer_keys": 35,
+    "key_conflict_stems": 0,
+    "key_conflict_different_answer": 0
   }
 }

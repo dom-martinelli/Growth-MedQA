@@ -1,0 +1,9 @@
+id,question,options,label
+OPT-CLEAN,Which measurement is plotted on a growth chart against age?,"{'A': 'height', 'B': 'weight', 'C': 'head circumference', 'D': 'arm span'}",A
+OPT-DUP-UNKEYED,Which test confirms the diagnosis in this infant?,"{'A': 'sweat chloride', 'B': 'stool elastase', 'C': 'sweat chloride', 'D': 'chest radiograph'}",D
+OPT-DUP-KEYED,Which antibody is most specific here?,"{'A': 'anti-La antibody', 'B': 'anti-dsDNA antibody', 'C': 'anti-La antibody', 'D': 'anti-Sm antibody'}",A
+OPT-DUP-PREFIXED,What is the next step in management?,"{'A': 'request the on-call consultant and wait', 'B': 'continue attempts from above', 'C': 'D. request the on-call consultant and wait', 'D': 'use a forceps blade'}",B
+OPT-PLACEHOLDER,Which treatment is first line for this child?,"{'A': 'nebulised bronchodilator', 'B': 'hydration and suction', 'C': 'antibiotics', 'D': 'inhaled steroids', 'E': 'n/a'}",A
+OPT-PLACEHOLDER-KEYED,Which of the following is correct?,"{'A': 'n/a', 'B': 'hypoglycaemia', 'C': 'hypocalcaemia', 'D': 'apnea of prematurity'}",A
+OPT-MARKUP,Which lesion is shown in the photograph?,"{'A': '<img style=""max-width: 100%"" src="" />', 'B': '<img style=""max-width: 100%"" src="" />', 'C': '<img style=""max-width: 100%"" src="" />', 'D': 'none of the above'}",A
+OPT-ONE-MARKUP,Which finding is shown alongside the described rash?,"{'A': '<img src="" />', 'B': 'pedal edema', 'C': 'tachypnea', 'D': 'sweating'}",B

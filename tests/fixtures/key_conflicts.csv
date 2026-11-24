@@ -1,0 +1,15 @@
+id,question,options,label
+KC-REAL-1,A six year old boy presents with recurrent gross haematuria after a sore throat. The likely diagnosis is,"{'A': 'IgA nephropathy', 'B': 'Wilms tumour', 'C': 'minimal change disease', 'D': 'reflux nephropathy'}",A
+KC-REAL-2,A six year old boy presents with recurrent gross haematuria after a sore throat. The likely diagnosis is,"{'A': 'IgA nephropathy', 'B': 'Wilms tumour', 'C': 'minimal change disease', 'D': 'reflux nephropathy'}",B
+KC-DOSE-1,The daily zinc supplement for a twelve month old infant is,"{'A': '5 mg/day', 'B': '10 mg/day', 'C': '20 mg/day', 'D': '40 mg/day'}",A
+KC-DOSE-2,The daily zinc supplement for a twelve month old infant is,"{'A': '5 mg/day', 'B': '10 mg/day', 'C': '20 mg/day', 'D': '40 mg/day'}",C
+KC-RT-1,Infants of diabetic mothers are likely to have which of the following lesions,"{'A': 'transposition of great arteries', 'B': 'tetralogy of Fallot', 'C': 'coarctation', 'D': 'truncus arteriosus'}",A
+KC-RT-2,Infants of diabetic mothers are likely to have which of the following lesions,"{'A': 'transposition of great aeries', 'B': 'tetralogy of Fallot', 'C': 'coarctation', 'D': 'truncus arteriosus'}",A
+KC-TYPO-1,A twenty year old presents with sudden onset palpitation and apprehension. The diagnosis is,"{'A': 'panic attack', 'B': 'thyrotoxicosis', 'C': 'phaeochromocytoma', 'D': 'arrhythmia'}",A
+KC-TYPO-2,A twenty year old presents with sudden onset palpitation and apprehension. The diagnosis is,"{'A': 'pannic attack', 'B': 'thyrotoxicosis', 'C': 'phaeochromocytoma', 'D': 'arrhythmia'}",A
+KC-SPACE-1,An infant with cystic fibrosis is likely to develop which complication,"{'A': 'meconium ileus', 'B': 'rectal prolapse', 'C': 'intussusception', 'D': 'volvulus'}",A
+KC-SPACE-2,An infant with cystic fibrosis is likely to develop which complication,"{'A': 'meconiumileus', 'B': 'rectal prolapse', 'C': 'intussusception', 'D': 'volvulus'}",A
+KC-TRUNC-1,A two year old without fever develops bone pain and vomiting after which excess,"{'A': 'vitamin A', 'B': 'vitamin D', 'C': 'vitamin C', 'D': 'vitamin K'}",A
+KC-TRUNC-2,A two year old without fever develops bone pain and vomiting after which excess,"{'A': 'vita', 'B': 'vitamin D', 'C': 'vitamin C', 'D': 'vitamin K'}",A
+KC-AGREE-1,The first line investigation for suspected intussusception in an infant is,"{'A': 'abdominal ultrasound', 'B': 'plain radiograph', 'C': 'barium enema', 'D': 'computed tomography'}",A
+KC-AGREE-2,The first line investigation for suspected intussusception in an infant is,"{'A': 'abdominal ultrasound', 'B': 'plain radiograph', 'C': 'barium enema', 'D': 'computed tomography'}",A

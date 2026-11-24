@@ -1,13 +1,21 @@
 {
   "file": "medmcqa_pediatric_questions.csv",
   "note": "openlifescienceai/medmcqa. Carries the rt-deletion corruption in the source rows, which defeats keyword curation.",
-  "recorded": "2026-11-18",
+  "recorded": "2026-11-23",
   "rows": 7457,
   "counts": {
     "rt_deletion_rows": 1451,
     "unscoreable_items": 6,
     "items_with_no_key": 0,
     "duplicate_stems": 4,
-    "repeated_ids": 0
+    "repeated_ids": 0,
+    "duplicate_option_items": 34,
+    "duplicate_option_keyed": 21,
+    "placeholder_option_items": 3,
+    "placeholder_is_key": 1,
+    "unreadable_option_items": 7,
+    "multi_answer_keys": 0,
+    "key_conflict_stems": 144,
+    "key_conflict_different_answer": 62
   }
 }

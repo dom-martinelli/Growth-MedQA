@@ -35,6 +35,11 @@ sys.path.insert(0, str(REPO))
 
 from qa.dataset_checks import (  # noqa: E402
     RT_DELETIONS,
+    duplicate_options,
+    key_conflicts,
+    multi_answer_keys,
+    placeholder_options,
+    unreadable_options,
     RT_REJECTED,
     duplicate_questions,
     ids_unique,
@@ -379,6 +384,14 @@ def test_source_pool_matches_its_recorded_baseline(baseline_path: Path):
         "items_with_no_key": _summary(keyed_answer_outside_options(rows), "items with no key"),
         "duplicate_stems": _summary(duplicate_questions(rows), "stems appearing more than once"),
         "repeated_ids": _summary(ids_unique(rows), "values used by more than one row"),
+        "duplicate_option_items": _summary(duplicate_options(rows), "same answer twice"),
+        "duplicate_option_keyed": _summary(duplicate_options(rows), "both the keyed answer"),
+        "placeholder_option_items": _summary(placeholder_options(rows), "padded with a filler"),
+        "placeholder_is_key": _summary(placeholder_options(rows), "key IS the filler"),
+        "unreadable_option_items": _summary(unreadable_options(rows), "text-free options"),
+        "multi_answer_keys": _summary(multi_answer_keys(rows), "single-answer scorer cannot score"),
+        "key_conflict_stems": _summary(key_conflicts(rows), "identical stems whose keys disagree"),
+        "key_conflict_different_answer": _summary(key_conflicts(rows), "different answer"),
     }
     expected = baseline["counts"]
     drift = {k: (expected.get(k), v) for k, v in actual.items() if expected.get(k) != v}

@@ -1,13 +1,21 @@
 {
   "file": "medxpertqa_text_pediatric_questions.csv",
   "note": "TsinghuaC3I/MedXpertQA, text split. Watched for items whose key is not among the options offered.",
-  "recorded": "2026-11-18",
+  "recorded": "2026-11-23",
   "rows": 491,
   "counts": {
     "rt_deletion_rows": 0,
     "unscoreable_items": 0,
     "items_with_no_key": 0,
     "duplicate_stems": 0,
-    "repeated_ids": 0
+    "repeated_ids": 0,
+    "duplicate_option_items": 2,
+    "duplicate_option_keyed": 0,
+    "placeholder_option_items": 0,
+    "placeholder_is_key": 0,
+    "unreadable_option_items": 0,
+    "multi_answer_keys": 0,
+    "key_conflict_stems": 0,
+    "key_conflict_different_answer": 0
   }
 }
