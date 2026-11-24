@@ -77,16 +77,18 @@ What is verified about the release artifacts:
   package whose one documented command is never executed is a promise rather
   than a package.
 
-One open item, recorded rather than hidden (`tests` reports it as an expected
-failure, so it stays visible while the decision is pending):
+One rule covers unparsed answers: when no answer can be parsed from a
+response, `is_correct` is left blank and the item is excluded. All 361 such rows
+follow it.
 
-> When no answer can be parsed from a response, this file does two different
-> things. 348 such rows leave `is_correct` blank, and 13 write `0.0`. Both rules
-> are defensible, but using both in one file means a reader who averages
-> `is_correct` directly gets a different number from the paper for three models
-> (Claude Haiku 4.5, Gemini 2.5 Pro, Llama 3.3 70B), all primary tier. The
-> published tables and `reproduce.py` both drop rows with no parsed answer, so
-> those 13 values are never used and the published numbers are unaffected.
+> Thirteen of them previously carried `0.0` instead, which meant a reader
+> averaging `is_correct` directly got a different number from the paper for
+> Claude Haiku 4.5, Gemini 2.5 Pro and Llama 3.3 70B, all primary tier.
+> Blanking them changed no published number: `reproduce.py` produces
+> byte-identical output and `supplementary/subgroup_accuracy_wilson_ci.csv` is
+> unchanged, because both already dropped rows with no parsed answer. Each
+> model's scored count now equals its published denominator exactly, and that
+> is asserted rather than recorded.
 
 ### Source-pool checks
 

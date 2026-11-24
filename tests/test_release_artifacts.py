@@ -158,23 +158,32 @@ def test_the_table_covers_the_primary_tier_and_only_the_primary_tier(predictions
 
 
 def test_unparsed_answers_use_one_encoding(predictions):
-    """Currently they do not, and this test says so rather than passing.
+    """When no answer can be parsed from a response, `is_correct` is blank.
 
-    348 unparsed answers are left blank in `is_correct` (excluded) and 13 are
-    written as 0.0 (counted wrong). Both rules are defensible; using both in one
-    file means a reader who averages `is_correct` gets a different number from
-    the paper for three models, with nothing in the file to explain it. All 13
-    are primary-tier models.
+    All 361 such rows now follow that one rule. Thirteen of them used to carry
+    `0.0` instead, which meant a reader averaging the column directly got a
+    different number from the paper for Claude Haiku 4.5, Gemini 2.5 Pro and
+    Llama 3.3 70B, all primary tier. Blanking them changed no published number:
+    reproduce.py's output is byte-for-byte identical and the subgroup table was
+    not touched, because both already dropped rows with no parsed answer. The
+    13 values were inert, and now they are also absent.
 
-    Marked xfail rather than deleted: the finding stays visible in the
-    repository, CI stays green while the decision is pending, and the day the
-    encoding is unified this test turns into an unexpected pass and has to be
-    promoted to a plain assertion.
+    This was an xfail while the decision was open. It is a plain assertion now,
+    which is the point of writing the finding as a test rather than a comment:
+    the day it is fixed, the test says so.
     """
-    findings = check_unparsed_encoding(predictions)
-    if findings:
-        pytest.xfail(findings[0])
-    assert findings == []
+    assert check_unparsed_encoding(predictions) == []
+
+
+def test_the_scored_count_equals_the_published_denominator(predictions, subgroups):
+    """Each model's scored rows and its published denominator are the same number.
+
+    This is the invariant the fix above bought. Before it, three models differed
+    by exactly their unparsed-but-scored rows, and the explanation had to be
+    carried in a baseline file. Now it is arithmetic, so it is asserted.
+    """
+    gaps = {m: d for m, d in denominator_gaps(predictions, subgroups).items() if d["gap"]}
+    assert not gaps, f"scored count and published denominator disagree: {gaps}"
 
 
 def test_the_published_denominators_still_match_their_baseline(predictions, subgroups):

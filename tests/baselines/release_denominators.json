@@ -1,11 +1,11 @@
 {
-  "note": "Recorded facts about the release artifacts, frozen so a change fails a test. The per-model gap between scored_in_predictions and denominator_in_table is exactly the 13 unparsed-but-scored rows (Haiku 11, Gemini 2.5 Pro 1, Llama 3.3 70B 1); see qa.release_checks.check_unparsed_encoding. If a gap changes by any other amount, that explanation no longer holds.",
-  "recorded": "2026-11-19",
+  "note": "Recorded facts about the release artifacts, frozen so a change fails a test. All 361 unparsed answers now leave is_correct blank (13 formerly carried 0.0), so every model's scored count equals its published denominator and the per-model gap is 0. That is asserted directly in test_the_scored_count_equals_the_published_denominator; this file holds the unanswered-item counts, which are a result rather than a rule.",
+  "recorded": "2026-11-23",
   "totals": {
     "prediction_rows": 21120,
     "models": 22,
     "items": 960,
-    "scored_rows": 20772,
+    "scored_rows": 20759,
     "unparsed_rows": 361
   },
   "unparsed_by_model": {
@@ -29,9 +29,9 @@
   },
   "per_model": {
     "Claude Haiku 4.5": {
-      "scored_in_predictions": 960,
+      "scored_in_predictions": 949,
       "denominator_in_table": 949,
-      "gap": 11
+      "gap": 0
     },
     "Claude Sonnet 4.5": {
       "scored_in_predictions": 956,
@@ -59,9 +59,9 @@
       "gap": 0
     },
     "Gemini 2.5 Pro": {
-      "scored_in_predictions": 960,
+      "scored_in_predictions": 959,
       "denominator_in_table": 959,
-      "gap": 1
+      "gap": 0
     },
     "Llama 3.1 8B": {
       "scored_in_predictions": 960,
@@ -69,9 +69,9 @@
       "gap": 0
     },
     "Llama 3.3 70B": {
-      "scored_in_predictions": 960,
+      "scored_in_predictions": 959,
       "denominator_in_table": 959,
-      "gap": 1
+      "gap": 0
     },
     "Mistral Small 3.2 24B": {
       "scored_in_predictions": 960,

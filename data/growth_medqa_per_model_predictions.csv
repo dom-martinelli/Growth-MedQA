@@ -982,15 +982,15 @@ medbullets::155,JesseLiu/medbulltes5op,A,Claude Haiku 4.5,primary,A,1.0
 medbullets::163,JesseLiu/medbulltes5op,B,Claude Haiku 4.5,primary,B,1.0
 medbullets::193,JesseLiu/medbulltes5op,D,Claude Haiku 4.5,primary,D,1.0
 medbullets::2,JesseLiu/medbulltes5op,A,Claude Haiku 4.5,primary,A,1.0
-medbullets::205,JesseLiu/medbulltes5op,E,Claude Haiku 4.5,primary,,0.0
+medbullets::205,JesseLiu/medbulltes5op,E,Claude Haiku 4.5,primary,,
 medbullets::259,JesseLiu/medbulltes5op,C,Claude Haiku 4.5,primary,C,1.0
 medbullets::269,JesseLiu/medbulltes5op,B,Claude Haiku 4.5,primary,C,0.0
 medbullets::296,JesseLiu/medbulltes5op,C,Claude Haiku 4.5,primary,E,0.0
 medbullets::30,JesseLiu/medbulltes5op,A,Claude Haiku 4.5,primary,A,1.0
-medbullets::48,JesseLiu/medbulltes5op,B,Claude Haiku 4.5,primary,,0.0
+medbullets::48,JesseLiu/medbulltes5op,B,Claude Haiku 4.5,primary,,
 medbullets::52,JesseLiu/medbulltes5op,C,Claude Haiku 4.5,primary,C,1.0
 medbullets::60,JesseLiu/medbulltes5op,D,Claude Haiku 4.5,primary,A,0.0
-medbullets::65,JesseLiu/medbulltes5op,D,Claude Haiku 4.5,primary,,0.0
+medbullets::65,JesseLiu/medbulltes5op,D,Claude Haiku 4.5,primary,,
 medbullets::96,JesseLiu/medbulltes5op,D,Claude Haiku 4.5,primary,D,1.0
 medexpqa_en::13,HiTZ/MedExpQA,D,Claude Haiku 4.5,primary,D,1.0
 medexpqa_en::18,HiTZ/MedExpQA,A,Claude Haiku 4.5,primary,A,1.0
@@ -1029,7 +1029,7 @@ medmcqa::119277,openlifescienceai/medmcqa,B,Claude Haiku 4.5,primary,B,1.0
 medmcqa::120010,openlifescienceai/medmcqa,A,Claude Haiku 4.5,primary,A,1.0
 medmcqa::120649,openlifescienceai/medmcqa,C,Claude Haiku 4.5,primary,C,1.0
 medmcqa::121281,openlifescienceai/medmcqa,C,Claude Haiku 4.5,primary,A,0.0
-medmcqa::121578,openlifescienceai/medmcqa,A,Claude Haiku 4.5,primary,,0.0
+medmcqa::121578,openlifescienceai/medmcqa,A,Claude Haiku 4.5,primary,,
 medmcqa::122638,openlifescienceai/medmcqa,B,Claude Haiku 4.5,primary,B,1.0
 medmcqa::122829,openlifescienceai/medmcqa,B,Claude Haiku 4.5,primary,D,0.0
 medmcqa::12284,openlifescienceai/medmcqa,D,Claude Haiku 4.5,primary,D,1.0
@@ -1113,11 +1113,11 @@ medmcqa::166256,openlifescienceai/medmcqa,A,Claude Haiku 4.5,primary,B,0.0
 medmcqa::166621,openlifescienceai/medmcqa,D,Claude Haiku 4.5,primary,D,1.0
 medmcqa::166905,openlifescienceai/medmcqa,A,Claude Haiku 4.5,primary,A,1.0
 medmcqa::166925,openlifescienceai/medmcqa,A,Claude Haiku 4.5,primary,A,1.0
-medmcqa::167210,openlifescienceai/medmcqa,B,Claude Haiku 4.5,primary,,0.0
+medmcqa::167210,openlifescienceai/medmcqa,B,Claude Haiku 4.5,primary,,
 medmcqa::167216,openlifescienceai/medmcqa,A,Claude Haiku 4.5,primary,A,1.0
 medmcqa::1680,openlifescienceai/medmcqa,A,Claude Haiku 4.5,primary,A,1.0
 medmcqa::168372,openlifescienceai/medmcqa,D,Claude Haiku 4.5,primary,B,0.0
-medmcqa::168672,openlifescienceai/medmcqa,B,Claude Haiku 4.5,primary,,0.0
+medmcqa::168672,openlifescienceai/medmcqa,B,Claude Haiku 4.5,primary,,
 medmcqa::168751,openlifescienceai/medmcqa,A,Claude Haiku 4.5,primary,A,1.0
 medmcqa::168880,openlifescienceai/medmcqa,A,Claude Haiku 4.5,primary,A,1.0
 medmcqa::169209,openlifescienceai/medmcqa,A,Claude Haiku 4.5,primary,B,0.0
@@ -1133,7 +1133,7 @@ medmcqa::176706,openlifescienceai/medmcqa,C,Claude Haiku 4.5,primary,C,1.0
 medmcqa::17729,openlifescienceai/medmcqa,A,Claude Haiku 4.5,primary,A,1.0
 medmcqa::177291,openlifescienceai/medmcqa,C,Claude Haiku 4.5,primary,A,0.0
 medmcqa::17750,openlifescienceai/medmcqa,C,Claude Haiku 4.5,primary,C,1.0
-medmcqa::17782,openlifescienceai/medmcqa,D,Claude Haiku 4.5,primary,,0.0
+medmcqa::17782,openlifescienceai/medmcqa,D,Claude Haiku 4.5,primary,,
 medmcqa::178283,openlifescienceai/medmcqa,B,Claude Haiku 4.5,primary,A,0.0
 medmcqa::178303,openlifescienceai/medmcqa,A,Claude Haiku 4.5,primary,A,1.0
 medmcqa::178712,openlifescienceai/medmcqa,B,Claude Haiku 4.5,primary,B,1.0
@@ -1154,8 +1154,8 @@ medmcqa::184334,openlifescienceai/medmcqa,B,Claude Haiku 4.5,primary,B,1.0
 medmcqa::184351,openlifescienceai/medmcqa,A,Claude Haiku 4.5,primary,A,1.0
 medmcqa::184885,openlifescienceai/medmcqa,B,Claude Haiku 4.5,primary,C,0.0
 medmcqa::185179,openlifescienceai/medmcqa,B,Claude Haiku 4.5,primary,A,0.0
-medmcqa::18861,openlifescienceai/medmcqa,D,Claude Haiku 4.5,primary,,0.0
-medmcqa::18942,openlifescienceai/medmcqa,B,Claude Haiku 4.5,primary,,0.0
+medmcqa::18861,openlifescienceai/medmcqa,D,Claude Haiku 4.5,primary,,
+medmcqa::18942,openlifescienceai/medmcqa,B,Claude Haiku 4.5,primary,,
 medmcqa::19115,openlifescienceai/medmcqa,A,Claude Haiku 4.5,primary,A,1.0
 medmcqa::19232,openlifescienceai/medmcqa,B,Claude Haiku 4.5,primary,A,0.0
 medmcqa::20006,openlifescienceai/medmcqa,B,Claude Haiku 4.5,primary,B,1.0
@@ -1281,7 +1281,7 @@ medmcqa::91247,openlifescienceai/medmcqa,B,Claude Haiku 4.5,primary,B,1.0
 medmcqa::91411,openlifescienceai/medmcqa,B,Claude Haiku 4.5,primary,B,1.0
 medmcqa::91636,openlifescienceai/medmcqa,A,Claude Haiku 4.5,primary,A,1.0
 medmcqa::91801,openlifescienceai/medmcqa,A,Claude Haiku 4.5,primary,A,1.0
-medmcqa::92653,openlifescienceai/medmcqa,A,Claude Haiku 4.5,primary,,0.0
+medmcqa::92653,openlifescienceai/medmcqa,A,Claude Haiku 4.5,primary,,
 medmcqa::92655,openlifescienceai/medmcqa,B,Claude Haiku 4.5,primary,B,1.0
 medmcqa::92806,openlifescienceai/medmcqa,D,Claude Haiku 4.5,primary,D,1.0
 medmcqa::9392,openlifescienceai/medmcqa,D,Claude Haiku 4.5,primary,A,0.0
@@ -1295,7 +1295,7 @@ medmcqa::96569,openlifescienceai/medmcqa,C,Claude Haiku 4.5,primary,C,1.0
 medmcqa::96919,openlifescienceai/medmcqa,B,Claude Haiku 4.5,primary,B,1.0
 medmcqa::97106,openlifescienceai/medmcqa,B,Claude Haiku 4.5,primary,B,1.0
 medmcqa::99492,openlifescienceai/medmcqa,D,Claude Haiku 4.5,primary,B,0.0
-medmcqa::99718,openlifescienceai/medmcqa,A,Claude Haiku 4.5,primary,,0.0
+medmcqa::99718,openlifescienceai/medmcqa,A,Claude Haiku 4.5,primary,,
 medmcqa::999,openlifescienceai/medmcqa,D,Claude Haiku 4.5,primary,D,1.0
 medqa::10019,GBaker/MedQA-USMLE-4-options,B,Claude Haiku 4.5,primary,B,1.0
 medqa::10047,GBaker/MedQA-USMLE-4-options,D,Claude Haiku 4.5,primary,D,1.0
@@ -2187,7 +2187,7 @@ medmcqa::56955,openlifescienceai/medmcqa,A,Gemini 2.5 Pro,primary,A,1.0
 medmcqa::57157,openlifescienceai/medmcqa,B,Gemini 2.5 Pro,primary,B,1.0
 medmcqa::58826,openlifescienceai/medmcqa,C,Gemini 2.5 Pro,primary,C,1.0
 medmcqa::58839,openlifescienceai/medmcqa,B,Gemini 2.5 Pro,primary,B,1.0
-medmcqa::58968,openlifescienceai/medmcqa,A,Gemini 2.5 Pro,primary,,0.0
+medmcqa::58968,openlifescienceai/medmcqa,A,Gemini 2.5 Pro,primary,,
 medmcqa::59169,openlifescienceai/medmcqa,D,Gemini 2.5 Pro,primary,D,1.0
 medmcqa::59187,openlifescienceai/medmcqa,C,Gemini 2.5 Pro,primary,C,1.0
 medmcqa::59594,openlifescienceai/medmcqa,B,Gemini 2.5 Pro,primary,B,1.0
@@ -4973,7 +4973,7 @@ medmcqa::176706,openlifescienceai/medmcqa,C,Llama 3.3 70B,primary,C,1.0
 medmcqa::17729,openlifescienceai/medmcqa,A,Llama 3.3 70B,primary,A,1.0
 medmcqa::177291,openlifescienceai/medmcqa,C,Llama 3.3 70B,primary,C,1.0
 medmcqa::17750,openlifescienceai/medmcqa,C,Llama 3.3 70B,primary,C,1.0
-medmcqa::17782,openlifescienceai/medmcqa,D,Llama 3.3 70B,primary,,0.0
+medmcqa::17782,openlifescienceai/medmcqa,D,Llama 3.3 70B,primary,,
 medmcqa::178283,openlifescienceai/medmcqa,B,Llama 3.3 70B,primary,A,0.0
 medmcqa::178303,openlifescienceai/medmcqa,A,Llama 3.3 70B,primary,A,1.0
 medmcqa::178712,openlifescienceai/medmcqa,B,Llama 3.3 70B,primary,B,1.0
