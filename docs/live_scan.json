@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-27T15:14:54+00:00",
+ "generated": "2026-11-27T15:23:13+00:00",
  "source": "https://datasets-server.huggingface.co",
  "checks": [
   {
@@ -395,18 +395,715 @@
   {
    "split": "openlifescienceai/medmcqa/default/test",
    "rows_in_split": 6150,
-   "rows_read": 0,
-   "complete": false,
-   "error": "https://datasets-server.huggingface.co/rows?dataset=openlifescienceai%2Fmedmcqa&config=default&split=test&offset=2000&length=100: gave up after 5 tries (HTTP 429)",
-   "findings": {}
+   "rows_read": 6150,
+   "complete": true,
+   "error": null,
+   "findings": {
+    "corrupted_text": {
+     "label": "letters deleted inside words",
+     "total": 325,
+     "detail": [
+      {
+       "detail": "rows with at least one deletion (of 6150)",
+       "count": 325,
+       "examples": []
+      },
+      {
+       "detail": "'aery' where 'artery' belongs",
+       "count": 65,
+       "examples": [
+        "5465988a-b2ff-4c8b-84ae-29a78e94b910: ...which type of aery is most commonly involved in pan?  musc...",
+        "807fdcbf-1a98-409b-a920-a5737a5bf9ba: ...mbosis of posterior inferior cerebellar aery causes:  lateral medullary syndrome web...",
+        "d7d1ebe1-78f8-42de-a8e1-92accf50150e: ...n antecubital vein jugular vein carotid aery     ..."
+       ]
+      },
+      {
+       "detail": "'hea' where 'heart' belongs",
+       "count": 64,
+       "examples": [
+        "844a64ad-ca35-427d-86d9-59ea9cd32df7: ...which is increased in plasma of chronic hea disease pts  bnp endothelin 1 coisol no...",
+        "712e7ad6-2b94-4d5e-9492-b02dc23e016b: ...all of the following is true about hea transplantation except -  immmunosupres...",
+        "8805f86d-9e67-4cad-a1ac-a067377f2853: ...which wall of hea enlargement can be seen on barium swall..."
+       ]
+      },
+      {
+       "detail": "'hypeension' where 'hypertension' belongs",
+       "count": 31,
+       "examples": [
+        "7d70c599-bc3b-4c13-bc05-70804ce4cfa6: ... given in patients of primary pulmonary hypeension?  icatibant bosentan labetolol sodium n...",
+        "4980ac88-2ea5-46bc-a554-193ec4231076: ...n of neuraxial/regional anesthesia is?  hypeension renal disease sepsis diabetes     ...",
+        "a3f1062d-5ad5-4d29-8cd9-523ff51df5d6: ... hypocalcemia peripheral aerial disease hypeension and diabetes     ..."
+       ]
+      },
+      {
+       "detail": "'aoa' where 'aorta' belongs",
+       "count": 23,
+       "examples": [
+        "1ffafd1c-c650-456b-b71f-eb57659678f9: ... commonly affected in ormond's disease  aoa ivc ureter gonadal vessels     ...",
+        "65b0f210-4579-423f-8f8c-26731fb3ed84: ...c apeure at the crossing of the arch of aoa     ...",
+        "25036dbb-d72a-431a-a866-44b3337d4786: ...aeries pulmonary atresia coarctation of aoa     ..."
+       ]
+      },
+      {
+       "detail": "'bih' where 'birth' belongs",
+       "count": 23,
+       "examples": [
+        "68dd4a7c-59a9-47a2-a256-3cad2ff1e384: ...lation are ?  sex ratio age composition bih rate dependency ratio     ...",
+        "1d565d66-f75f-4a0b-a9c6-c9f929d37872: ...sses the suture lines always present at bih ventouse delivery is a risk factor all ...",
+        "25036dbb-d72a-431a-a866-44b3337d4786: ...nital anomalies leads to hea failure at bih?  total anomalous pulmonary venous conn..."
+       ]
+      },
+      {
+       "detail": "'impoant' where 'important' belongs",
+       "count": 17,
+       "examples": [
+        "6c309a19-101c-4d24-bec6-d85a373d3a85: ...most impoant factor in causation of ingrown toe nail...",
+        "6d1467f3-88b5-4ecc-87a8-e0cc80b68bad: ...most impoant extracellular buffer ?  phosphate plasm...",
+        "1795540f-734b-4ebe-90d6-54b6a5c00fe9: ...hemodynamically impoant lesions of renal aery stenosis are pred..."
+       ]
+      },
+      {
+       "detail": "'infeility' where 'infertility' belongs",
+       "count": 16,
+       "examples": [
+        "fb097b4b-3770-4447-8af5-9849f37699d6: ...treatment of choice in patient with infeility & endometriosis ?  iui surgery danozol ...",
+        "d7998c7c-7002-49fa-9e74-e56e398be1b5: ...toms of endometriosis are all except ?  infeility dysmenorrhea dyspareunia cyclical hemat...",
+        "9c88a5e6-62d3-4dd4-b48e-14e74e52b3ba: ... lower prolactin level in a female with infeility is  bromocriptine gnrh testosterone coi..."
+       ]
+      },
+      {
+       "detail": "'sho' where 'short' belongs",
+       "count": 16,
+       "examples": [
+        "80660f41-c52b-40d4-9d00-3a60f702595b: ...ion of long fatty acids accumulation of sho chain fatty acids accumulation of very ...",
+        "c249836d-1fc3-4cda-8822-9612b63cd661: ...of stomach drains into ?  pyloric nodes sho gastric vessel nodal group right gastro...",
+        "238dfeb1-1211-4185-aea4-6d566c950502: ...nd long pieces of dna on leading strand sho pieces of dna on lagging strand sho pie..."
+       ]
+      },
+      {
+       "detail": "'staed' where 'started' belongs",
+       "count": 12,
+       "examples": [
+        "712e7ad6-2b94-4d5e-9492-b02dc23e016b: ...antation except -  immmunosupression is staed preoperatively it is only ohotopic and ...",
+        "962283e0-6717-4ea8-a023-b4cf030d497a: ...when is folic acid staed in pregnancy ?  4 weeks prior to concep...",
+        "7c138d2f-fbdf-467c-9723-1dcc05ce87ef: ...in newborn, chest compression should be staed if hea rate is ?  < 120/min < 100/min <..."
+       ]
+      },
+      {
+       "detail": "'coex' where 'cortex' belongs",
+       "count": 12,
+       "examples": [
+        "82e2e8ef-25e6-4a28-b861-a994ab10857e: ...  spinal cord medulla midbrain cerebral coex     ...",
+        "f8c09e3d-37f0-4a4c-9a2f-d26fbd7a2bb8: ...renal papilla opens into -  coex pyramid minor calyx major calyx     ...",
+        "2c522e9f-929a-4993-94f2-5cbdd433f47d: ...where is the auditory coex located inside the brain?  superior tem..."
+       ]
+      },
+      {
+       "detail": "'aerial' where 'arterial' belongs",
+       "count": 10,
+       "examples": [
+        "712e7ad6-2b94-4d5e-9492-b02dc23e016b: ... cadaver/donor is needed high pulmonary aerial resistance in a contra indication     ...",
+        "a0ff46f8-92d3-43d6-857b-1e1ae46a9906: ...critical closing pressure is ?  aerial pressure minus venous pressure capillar...",
+        "a3f1062d-5ad5-4d29-8cd9-523ff51df5d6: ...d with  smoking hypocalcemia peripheral aerial disease hypeension and diabetes     ..."
+       ]
+      },
+      {
+       "detail": "'moality' where 'mortality' belongs",
+       "count": 10,
+       "examples": [
+        "0b2dfcd6-cbf3-47f9-a7b0-b27c0770ee45: ...excellent predictor of moality and morbidity in patients after hepatec...",
+        "33d412dd-6cf5-43a7-8cb7-01ad005dea3f: ...most common cause of maternal moality in spinal anesthesia is ?  allergy to l...",
+        "e6450e07-8d26-4399-8202-b94a23d917f4: ... have live bihs as denominator?  infant moality rate neonatal moality rate child moalit..."
+       ]
+      },
+      {
+       "detail": "'aeries' where 'arteries' belongs",
+       "count": 9,
+       "examples": [
+        "25036dbb-d72a-431a-a866-44b3337d4786: ...enous connection transposition of great aeries pulmonary atresia coarctation of aoa   ...",
+        "a9face95-6dbe-4db3-8f43-27cc7f8ea1c6: ...itation it is better felt in peripheral aeries it has one peak in systole and one in d...",
+        "2dbbbf50-6d54-4305-abf4-5684964b7476: ...aificially in  aeriosclerosis calcified aeries ischemic ulcers intermittent claudicati..."
+       ]
+      },
+      {
+       "detail": "'inseion' where 'insertion' belongs",
+       "count": 8,
+       "examples": [
+        "a36b2422-0c84-4bd0-b34b-7a914a66c51f: ...battle door inseion of placenta ?  cord attached to the mar...",
+        "3ce7c318-eb5f-48fb-866d-2d30173965fa: ...raply transient response at the time of inseion of eloctrode indicates ?  spontoneous m...",
+        "74031b50-3e75-4df5-a648-27644784728f: ...absolute contraindication for inseion of iud  history of pid congenital uteri..."
+       ]
+      },
+      {
+       "detail": "'veebral' where 'vertebral' belongs",
+       "count": 7,
+       "examples": [
+        "f7847715-749a-45fc-ad49-f01f824858f1: ...y stroke posterior cerebral aery stroke veebral aery aneurysm basilar aery aneurysm    ...",
+        "4631c5be-faad-42ba-84e3-b09ebc3752eb: ...ntage of multiple myeloma patients have veebral involvement?  22% 44% 66% 88%     ...",
+        "de00fa45-d20a-4833-bfb4-a12d71238cbc: ...which of the following is true about veebral development -  the notochord forms the ..."
+       ]
+      },
+      {
+       "detail": "'poal' where 'portal' belongs",
+       "count": 7,
+       "examples": [
+        "85e93cd0-b59e-4068-9278-ed92cfd10555: ... the pancreas will compress which aery  poal vein superior mesenteric aery inferior ...",
+        "ffc1030d-16b1-4387-a579-bbcaaaeea1c0: ...or pancreaticoduo-denectomy  metastasis poal vein involvement stage iii ca head of p...",
+        "e1cd72a2-be3a-45bb-a1cb-3b7ba0b89172: ...in adipose tissue diffuse directly into poal circulation all of the above     ..."
+       ]
+      },
+      {
+       "detail": "'coical' where 'cortical' belongs",
+       "count": 7,
+       "examples": [
+        "e45661cd-e000-4db6-aeb1-425aa62bec59: ...essential for glucose entry in?  muscle coical neurons renal tubular cells beta cells ...",
+        "794cbbcb-bd78-406b-a501-05e83d3cc2a2: ...ract nuclear cataract capsular cataract coical cataract     ...",
+        "5574873f-2144-41e3-b21b-600ce882a003: ... between the coex and tumor without any coical invasion. what is the usual treatment f..."
+       ]
+      },
+      {
+       "detail": "'glucocoicoids' where 'glucocorticoids' belongs",
+       "count": 6,
+       "examples": [
+        "599815fc-a87e-4100-adee-5447eeb734bd: ...a patient with pre term labour exept -  glucocoicoids tocolytic drugs antibiotics beta blocke...",
+        "2c457d96-bf88-4b8e-a2d2-3df2eed59ca1: ...ed mostly by ?  calcitriol parathormone glucocoicoids acth     ...",
+        "731941d2-4ec9-429f-9ec2-ea7fb57ae837: ...like morphine triptans like sumatriptan glucocoicoids     ..."
+       ]
+      },
+      {
+       "detail": "'bihs' where 'births' belongs",
+       "count": 6,
+       "examples": [
+        "635c5197-55e2-448e-9583-f760a91fdd05: ...of omphalocele at bih is  1 in 100 live bihs 1 in 2000 live bihs 1 in 4000 live bihs...",
+        "e6450e07-8d26-4399-8202-b94a23d917f4: ...which does not have live bihs as denominator?  infant moality rate ne...",
+        "d2ce5bd0-1b4f-4fa0-82f3-d048a5959feb: ...ned as ?  maternal death per 1000 total bihs maternal death per 1000 live bihs mater..."
+       ]
+      },
+      {
+       "detail": "'suppo' where 'support' belongs",
+       "count": 4,
+       "examples": [
+        "f24f230a-85a7-4368-8747-e0ca851f8799: ...grasp waving bye - bye standing without suppo plays a peek - a - boo game     ...",
+        "07d5ea6b-d75c-46ed-a49c-9120180a15fb: ...inotropic suppo for severely dehydrated child with dopa...",
+        "213e59b8-7f0b-4a5a-bdb6-dd3fada165af: ...level 1 suppo of uterus & vagina is ?  levator ani pe..."
+       ]
+      },
+      {
+       "detail": "'coicosteroids' where 'corticosteroids' belongs",
+       "count": 3,
+       "examples": [
+        "70c8db7d-16bf-4850-af4f-eb13080ae275: ...opathic form is called ormond's disease coicosteroids are mainstay of treatment     ...",
+        "2557c6da-4730-43c2-8236-be6ae6281fa0: ...anti-inflammatory actions of coicosteroids are mediated by ?  by inhibiting angiog...",
+        "814c3cfa-79d7-4580-a8cf-601554e02ac3: ...ated by ?  insulin glucagon epinephrine coicosteroids     ..."
+       ]
+      },
+      {
+       "detail": "'veebra' where 'vertebra' belongs",
+       "count": 3,
+       "examples": [
+        "29899bc3-2bf2-4f4d-817f-ade32c62b705: ...veebra plana is seen in all except -  histioct...",
+        "dd86a059-1fa9-404a-89d1-ee6020a8a6a1: ...s the fracture involving which cervical veebra?  c1 c2 c3 c4     ...",
+        "63218fca-9b1f-4204-8d99-3522681dc2e7: ...striated veebra is seen in  tb spine haemangioma chordo..."
+       ]
+      },
+      {
+       "detail": "'inseed' where 'inserted' belongs",
+       "count": 2,
+       "examples": [
+        "15722d97-d4ad-4801-83f4-c96b8e1866d2: ...lapse in pregnancy, ring pessary can be inseed upto ?  12 weeks 14 weeks 16weeks 18 we...",
+        "e1ffe401-3fe2-45aa-a02a-0ada1d276a4a: ...when is copper t inseed ?  3 days after periods are over within..."
+       ]
+      },
+      {
+       "detail": "'stas' where 'starts' belongs",
+       "count": 2,
+       "examples": [
+        "fcac2609-89f3-40c6-8c0b-c5392b60e7e8: ...immunity stas after how many days of yellow fever vac...",
+        "acb36068-6c59-4cb3-85b5-d7063b582b86: ...child stas monosyllables speech in which age  4 mo..."
+       ]
+      },
+      {
+       "detail": "'paracoical' where 'paracortical' belongs",
+       "count": 1,
+       "examples": [
+        "a2783360-41fb-4bff-b84e-c185937ed032: ...located in which region of lymph nodes  paracoical region coical follicles medullar sinuse..."
+       ]
+      }
+     ]
+    },
+    "duplicate_options": {
+     "label": "the same answer offered twice",
+     "total": 34,
+     "detail": [
+      {
+       "detail": "items offering the same answer twice (of 6150)",
+       "count": 34,
+       "examples": [
+        "8bc9aa47-8266-42e8-9a55-e401c9f5f1b8: 'diphtheria' appears 2x",
+        "5d71d1dc-0c10-415c-b8f1-d61f261e6b2b: '1.67 mm \u00b133.16%' appears 2x",
+        "2f477889-ffa0-4144-8d47-b6bcd790dd33: 'dna' appears 3x",
+        "88e0bda2-99fc-4f4a-b31a-1001300cd692: 'amauratic pupil' appears 2x",
+        "42e55e03-573f-4ef9-b2ce-7b934b498a33: 'post-mortemhanging' appears 2x"
+       ]
+      }
+     ]
+    },
+    "placeholder_options": {
+     "label": "padded with a filler choice",
+     "total": 212,
+     "detail": [
+      {
+       "detail": "items padded with a filler option",
+       "count": 212,
+       "examples": [
+        "9c82e23e-714e-422b-a4fa-e89aef919819: ['D']",
+        "e220f29e-e63f-4bbe-8305-f0fd4dc002f1: ['D']",
+        "844a64ad-ca35-427d-86d9-59ea9cd32df7: ['D']",
+        "d30c8ae6-52c5-443a-8b1b-e55f5a73ebb8: ['D']",
+        "807fdcbf-1a98-409b-a920-a5737a5bf9ba: ['D']"
+       ]
+      }
+     ]
+    },
+    "unreadable_options": {
+     "label": "options that are markup with no text",
+     "total": 0,
+     "detail": []
+    },
+    "key_not_offered": {
+     "label": "the key names no offered option",
+     "total": null,
+     "not_applicable": "this split does not publish its answer keys",
+     "detail": []
+    },
+    "multi_answer_keys": {
+     "label": "select-all items keyed as a list",
+     "total": null,
+     "not_applicable": "this split does not publish its answer keys",
+     "detail": []
+    },
+    "duplicate_questions": {
+     "label": "the same question more than once",
+     "total": 1,
+     "detail": [
+      {
+       "detail": "stems appearing more than once",
+       "count": 1,
+       "examples": [
+        "2x: which of the following is not a branch of third part of maxillary artery:... (b63b32cc-0a32-45d2-b95f-163c71620952, 06cff365-d8ef-49b3-8d9f-7e30e83e4ebc)"
+       ]
+      },
+      {
+       "detail": "rows that are a repeat of an earlier row",
+       "count": 1,
+       "examples": []
+      }
+     ]
+    },
+    "key_conflicts": {
+     "label": "identical questions whose keys disagree",
+     "total": null,
+     "not_applicable": "this split does not publish its answer keys",
+     "detail": []
+    }
+   },
+   "keys_published": false
   },
   {
    "split": "openlifescienceai/medmcqa/default/train",
    "rows_in_split": 182822,
-   "rows_read": 0,
+   "rows_read": 5000,
    "complete": false,
-   "error": "https://datasets-server.huggingface.co/rows?dataset=openlifescienceai%2Fmedmcqa&config=default&split=train&offset=0&length=100: gave up after 5 tries (HTTP 429)",
-   "findings": {}
+   "error": null,
+   "findings": {
+    "corrupted_text": {
+     "label": "letters deleted inside words",
+     "total": 668,
+     "detail": [
+      {
+       "detail": "rows with at least one deletion (of 5000)",
+       "count": 668,
+       "examples": []
+      },
+      {
+       "detail": "'impoant' where 'important' belongs",
+       "count": 119,
+       "examples": [
+        "e529be7c-f360-4dba-b313-7f3fc240697a: ...ctually a direct pick from harrison, an impoant topic for entrance examinations hirsuti...",
+        "4e6de6fe-8c69-4553-827d-417ce597f3ac: ...ance hypersensitivity   one of the most impoant pharmacokinetic changes associated with...",
+        "2b42ac45-27a8-4304-b28d-7554722e76ba: ...illosis are: glucocoicoid use (the most impoant risk factor) profound neutropenia or ne..."
+       ]
+      },
+      {
+       "detail": "'hea' where 'heart' belongs",
+       "count": 107,
+       "examples": [
+        "836756cc-2b92-483b-a8cc-302b578a9eaa: ...riod includes ?  balloon valvotomy open hea surgery karyotyping aspirin   ans. is '...",
+        "1d4ccb9d-1924-4aa6-b07c-0ed46fe31c20: ...al scalp ph continuous electrical fetal hea monitoring physical examination   elect...",
+        "3dcd635a-5f00-4e07-962c-4feafc753682: ... following may be seen in second degree hea block (select three options):  change i..."
+       ]
+      },
+      {
+       "detail": "'aery' where 'artery' belongs",
+       "count": 105,
+       "examples": [
+        "cdeedb04-fbe9-432c-937c-d53ac24475de: ...olized during surgery and lodged in the aery supplying the optic nerve. which aery w...",
+        "0e3852f0-45a6-493c-96d5-aefe1e0fa769: ...  sphenoidal air sinus internal carotid aery foramen lacerum maxillary nerve   struc...",
+        "e718f928-325c-4060-9148-a827bc5e985b: ...se without regurgitation prior coronary aery bypass graft coarctation of aoa   answe..."
+       ]
+      },
+      {
+       "detail": "'sho' where 'short' belongs",
+       "count": 72,
+       "examples": [
+        "f3bf8583-231b-4b7a-828c-179b0f9ccdd9: ... it is epithelium lined tract, situated sho distance behind the anus, containing ha...",
+        "f5df7424-6485-43fa-ba98-6de498561a76: ...ce of the ureterovesical valve due to a sho intramural segment ref harrison20th edi...",
+        "fa2a40f5-7d07-473b-9175-f891e8923e19: ...reference : page 1328 bailey and love's sho practice of surgery 25th edition and pa..."
+       ]
+      },
+      {
+       "detail": "'hypeension' where 'hypertension' belongs",
+       "count": 64,
+       "examples": [
+        "1081d0b1-9e05-4d2a-8c52-1668deea11ac: ...nsitive screening test for renovascular hypeension?  hrct ct angiography captopril enhance...",
+        "7a277163-0216-4d34-838f-3f4ca53d763c: ...es should not be given in patients with hypeension since this is classically known to incr...",
+        "44c444b1-70f2-4e52-94f0-78544786ed41: ... and hepato toxicity. it can also cause hypeension, tremors, seizure, diabetes mellitus an..."
+       ]
+      },
+      {
+       "detail": "'bih' where 'birth' belongs",
+       "count": 55,
+       "examples": [
+        "e3b9ae95-2b0e-42af-a27a-f6c0b51af476: ...pectancy at one year life expectancy at bih all   ans. is 'c' i.e., life expectancy...",
+        "1e61071d-fa24-4df4-b39d-ad51308c63e2: ...orders, the infants are asymptomatic at bih and during the first day or two of life...",
+        "10fa25e5-2afd-4660-bd47-8759e3004d33: ...child with mild squint. intrauterine, bih history, developmental history till dat..."
+       ]
+      },
+      {
+       "detail": "'aeries' where 'arteries' belongs",
+       "count": 41,
+       "examples": [
+        "1081d0b1-9e05-4d2a-8c52-1668deea11ac: ...eotide scan doppler ultrasound of renal aeries   hypeension due to an occlusive lesion...",
+        "88583589-3126-49ce-b502-07c7fd8f5c63: ...border of 1st rib, all of the following aeries help in maintaining the circulation to ...",
+        "226c17a9-13fe-4496-bc2e-5aabce4fef1c: ...nk for the origin of the aoa, pulmonary aeries and coronary aeries. it results from ab..."
+       ]
+      },
+      {
+       "detail": "'aerial' where 'arterial' belongs",
+       "count": 39,
+       "examples": [
+        "f94f9f8f-fb28-44f0-9381-3dca473e305d: ... a chronic inflammatory response of the aerial wall initiated by injury to endothelium...",
+        "97680640-ea40-4384-bdfb-b6ae47417707: ...al syncope may result from a decline in aerial pressure caused by vasodilation in the ...",
+        "d5d03cd8-055b-49bf-9b2d-4b8dc3fd6b4d: ...must be performed once the diagnosis of aerial occlusion or bowel infarction has been ..."
+       ]
+      },
+      {
+       "detail": "'moality' where 'mortality' belongs",
+       "count": 32,
+       "examples": [
+        "af3f9375-99f2-4495-8e66-c875d70c9612: ...egular follow up. condition has got 10% moality. ref: srb's manual of surgery 5th editi...",
+        "ccb6817f-6a6b-49c6-879b-0bd13daf314d: ...ut neither was effectively treated. the moality rate for bacterial parotitis was 80%. b...",
+        "a5f415f4-c085-46c1-936b-4550065920f9: ... worm   ans. b: hook worm morbidity and moality from hookworm infection depend much on ..."
+       ]
+      },
+      {
+       "detail": "'aoa' where 'aorta' belongs",
+       "count": 31,
+       "examples": [
+        "e718f928-325c-4060-9148-a827bc5e985b: ...ronary aery bypass graft coarctation of aoa   answer is d (coarctation of aoa) coar...",
+        "23294025-db77-485a-a342-16e13930f3b2: ...num common bile duct inferior vena cava aoa   the posterior relations of the head o...",
+        "7a26e088-4af9-4d66-925f-e4e91d76f6ca: ...a, leading to dilation of the ascending aoa). abraham lincoln may have had this con..."
+       ]
+      },
+      {
+       "detail": "'coex' where 'cortex' belongs",
+       "count": 27,
+       "examples": [
+        "cb8dbb33-9f74-4e01-8ac3-fe295178d2a1: ... both efferent and afferent are present coex and medulla are present red pulp and wh...",
+        "14ad749d-17b1-4bea-9f35-41d5fb11c816: ...ude: visual, language, and sensorimotor coex; the thalamus and hypothalamus; the int...",
+        "2e4474c3-a6a1-4ac7-b7f1-29d595a093b1: ...relfex is lost in lesion of -  cerebral coex midbrain medulla spinal cord   ans. is ..."
+       ]
+      },
+      {
+       "detail": "'coical' where 'cortical' belongs",
+       "count": 25,
+       "examples": [
+        "cb8dbb33-9f74-4e01-8ac3-fe295178d2a1: ...inus. this sinus is continuous with the coical sinuses and delivers the lymph into the...",
+        "af3f9375-99f2-4495-8e66-c875d70c9612: ...enzae) occasionally can cause. there is coical venous thrombophlebitis and coical infa...",
+        "fd8ef88d-5c1d-408a-8821-22c2ad3a590f: ...s. c i.e. dementia alzheimer's dementia coical (not subcoical) dementia, progressive, ..."
+       ]
+      },
+      {
+       "detail": "'poal' where 'portal' belongs",
+       "count": 21,
+       "examples": [
+        "7a14deed-5c09-443b-9221-10f3a70fb6a4: ...d poals in knee ahroscopy anterolateral poal almost all the structures within the kn...",
+        "2b42ac45-27a8-4304-b28d-7554722e76ba: ...what is the most probable poal of entry of aspergillus?  puncture woun...",
+        "29ff1468-bf9c-442f-81b9-ab7524e294be: ...t route of spread  hematogenous through poal vein. ascending infection through bilia..."
+       ]
+      },
+      {
+       "detail": "'repoed' where 'reported' belongs",
+       "count": 21,
+       "examples": [
+        "d5d03cd8-055b-49bf-9b2d-4b8dc3fd6b4d: ...tput states. a moality of 50% to 75% is repoed. the majority of affected patients are ...",
+        "84911b71-e906-4984-8346-6418c0aed663: ...cose tolerance and photosensitivity are repoed, but urate level is not increased. ref:...",
+        "6022af1f-be7a-4b78-8cda-43e0bac536e5: ...titre can be estimated. the results are repoed as reactive, weak by reactive / not rea..."
+       ]
+      },
+      {
+       "detail": "'suppo' where 'support' belongs",
+       "count": 17,
+       "examples": [
+        "ade72f9a-6b13-4e9f-bfa1-b1cd94ea5207: ...ry and the patient will need ventilator suppo. this will ensure securing the airway a...",
+        "06d06437-d265-4554-ab42-19b43d7aa768: ...t uses a control or comparison group to suppo or refute an inference (refer pgno:71 p...",
+        "ec560c3b-7ce3-46f5-9020-9263cb87db0f: ...y care as a result of earlier discharge suppo for mother and family in caring baby. p..."
+       ]
+      },
+      {
+       "detail": "'staed' where 'started' belongs",
+       "count": 17,
+       "examples": [
+        "0255b23e-45f6-4f9a-a407-cc8bcbc85cd3: ...ains elevated, insulin therapy is often staed. about 30% of women with gestational di...",
+        "fce45c6e-0c45-47d5-849a-59bfce0a8b29: ...s exam and his father got a bicycle, he staed to read well, what is the line of thera...",
+        "aaa09f14-d097-401e-a543-a9a9e4fa9a7d: ...as diagnosed with schizophrenia and was staed on haloperidol 5mg. on 3rd day he prese..."
+       ]
+      },
+      {
+       "detail": "'stas' where 'starts' belongs",
+       "count": 16,
+       "examples": [
+        "9e9842eb-7ec0-4d06-9a22-bbcb97151aec: ...ubligamentous bone. the process usually stas at the sacroiliac joints. other entheso...",
+        "1dfe0a51-259c-4aad-8ae2-f94640af28c7: ...muscle   alcock canal or pudendal canal stas from the lesser sciatic notch and runs ...",
+        "92659a1c-5537-4957-ba76-a9c6551a8730: ...ytoplasmic process.fatty acid synthesis stas with the production of acetyl co-a with..."
+       ]
+      },
+      {
+       "detail": "'infeility' where 'infertility' belongs",
+       "count": 15,
+       "examples": [
+        "168e4c3a-95f4-42fe-9a7b-6e3bff6fd7b2: ...roplasty done for a bicornuate uterus?  infeility menorrhagia repeated early pregnancy lo...",
+        "0373c995-1375-4b64-b4fc-757f2ee9055c: ...cal repair of a bicornuate uterus is -  infeility dysmenorrhoea menorrhagia recurrent abo...",
+        "6cfa1ab3-bd18-4fd5-9e40-42280bc13424: ...he potential role of cervical factor in infeility. the couple is advised intercourse clos..."
+       ]
+      },
+      {
+       "detail": "'glucocoicoids' where 'glucocorticoids' belongs",
+       "count": 13,
+       "examples": [
+        "ade72f9a-6b13-4e9f-bfa1-b1cd94ea5207: ...ular paralysis nor-epinephrine sedation glucocoicoids   glucocoicoids are useful for manageme...",
+        "4aaa1979-d835-4536-9c75-19b54a255241: ...at described for adults and may require glucocoicoids, immunosuppressive drugs, biological ag...",
+        "f31e136f-03b2-4c6c-ac9a-1b44363e8c93: ... tricyclic antidepressants cyclosporine glucocoicoids rofecoxib (nsaid) erythropoietin valdec..."
+       ]
+      },
+      {
+       "detail": "'veebral' where 'vertebral' belongs",
+       "count": 13,
+       "examples": [
+        "9068aea8-3633-4c43-b958-41861be80599: ...al oblique muscle:  anterior flexion of veebral column active expiration closure of ing...",
+        "1ed53dcc-90d8-4ab4-86c6-2b013d2d989b: ...ross the disk space to involve adjacent veebral body prognosis is poor when motor defic...",
+        "37550fd7-46d1-4623-bb64-a1d925af5830: ... spinal cord occupies superior 2/3rd of veebral canal it continues cranially with medul..."
+       ]
+      },
+      {
+       "detail": "'inseion' where 'insertion' belongs",
+       "count": 12,
+       "examples": [
+        "9d401433-8335-487e-8723-fcfc3b43c520: ...types of mutation?  deletion frameshift inseion missense   missense mutations are those...",
+        "895b0a22-7c6c-4abc-9bc9-29f257185b1f: ...ment about one third laterally from the inseion point of the inguinal ligament on the p...",
+        "9d56662a-e7c1-49ec-aaff-1a766fe9d442: ...should be made npo and nasogastric tube inseion should be done.  ..."
+       ]
+      },
+      {
+       "detail": "'inseed' where 'inserted' belongs",
+       "count": 9,
+       "examples": [
+        "ca66ef8e-5872-4d93-9624-32341ce79f17: ...st a small polyethylene feeding tube is inseed in the bladder and left for several day...",
+        "9fd049a3-b32a-4f2d-badb-206e46dd84c6: ...gal cell membrane: combine with it, get inseed into the membrane and several polyene m...",
+        "2b3ce6e8-b033-45af-8317-05a736e4cd26: ...1 mm x 40 cm polypropylene mesh tape is inseed transvaginally at the level of the midu..."
+       ]
+      },
+      {
+       "detail": "'bihs' where 'births' belongs",
+       "count": 8,
+       "examples": [
+        "686cd2ab-481a-4ae2-9939-5de79056ae75: ...ate is -  maternal deaths / 100000 live bihs maternal death /100 live bihs maternal ...",
+        "9752d8e3-e260-40dd-97ae-d846f413301e: ...opulation of approximately 1 in 100,000 bihs.ref: dm vasudevan, 7th edition, page no...",
+        "4da5f284-62c6-4a27-ab14-2865f30c0f99: ...developmental condition (3 in 1000 live bihs), affecting boys more than girls (m:f =..."
+       ]
+      },
+      {
+       "detail": "'veebra' where 'vertebra' belongs",
+       "count": 7,
+       "examples": [
+        "d73190cf-3f68-4d02-a7f5-0d6fac8cdcdb: ... bony metastasis in the pelvis & lumbar veebra) indicate towards prostate ca. serum ac...",
+        "37550fd7-46d1-4623-bb64-a1d925af5830: ...es between 12th thoracic and 3rd lumbar veebra. in adults, it terminates at the level ...",
+        "5d0a032c-1b73-405b-af2f-4a612432f97f: ... cricoid cailage and the sixth cervical veebra. it descends largely anterior to the ve..."
+       ]
+      },
+      {
+       "detail": "'coicosteroids' where 'corticosteroids' belongs",
+       "count": 5,
+       "examples": [
+        "6928a986-b002-4115-9c81-631f67d6c07a: ... drugs, such as aspirin, ibuprofen, and coicosteroids, and also with alcohol, chemotherapy, i...",
+        "2da0387f-a1c4-43c1-8096-fe225e278ec6: ...reatment discontinue the offending drug coicosteroids: topical and systemic antihistamines. i...",
+        "e074a5c9-3f07-4549-a9f3-ca09d8d160c5: ...sical and mental strain and late nights coicosteroids and other immunosuppressive agents intr..."
+       ]
+      },
+      {
+       "detail": "'shoness' where 'shortness' belongs",
+       "count": 4,
+       "examples": [
+        "f6c9fd05-bcda-4397-bcaa-a17d65107ad3: ...to the casualty with symptoms of fever, shoness of breath, and cough. a chest x-ray rev...",
+        "f6b9c641-ad72-4d28-a62d-612a9ee6e031: ...ar until mid-teens, poor growth and/ or shoness is the hallmark of childhood gh deficie...",
+        "19950a16-a96f-42d6-baef-f52950186f2b: ...?  mmrc dyspnea scale ,grade 2 includes shoness of breath when hurrying up inclines dec..."
+       ]
+      },
+      {
+       "detail": "'quaer' where 'quarter' belongs",
+       "count": 3,
+       "examples": [
+        "5ee5ca07-d119-469b-9b41-d65bb8875368: ...orm of thyroglobulin. approximately one quaer of these residues is iodinated at the a...",
+        "007d5aaa-28aa-46a0-b9a1-b410630d4bb5: ...ates are 95% and 81%, respectively. one-quaer of people with cirrhosis will develop c...",
+        "db88be30-8b40-4025-b452-17c59a344a96: ...ic eye wearing spectacles is about 25% (quaer) magnified/ larger than the emmetropic ..."
+       ]
+      },
+      {
+       "detail": "'aeriovenous' where 'arteriovenous' belongs",
+       "count": 1,
+       "examples": [
+        "a0898369-2a07-4dee-b43c-6db914fc7175: ...blood supplies to them. that is why the aeriovenous oxygen difference is negligible in thes..."
+       ]
+      },
+      {
+       "detail": "'heas' where 'hearts' belongs",
+       "count": 1,
+       "examples": [
+        "10bf34e4-d615-42ff-88f0-2e460e210d9e: ...ns, the coronary aeries of transplanted heas undergo intimal thickening associated w..."
+       ]
+      },
+      {
+       "detail": "'paracoical' where 'paracortical' belongs",
+       "count": 1,
+       "examples": [
+        "650debb1-0bee-4a55-a072-7f549690d93c: ...tres of lymph nodes   decreased size of paracoical areas of lymph nodes is expected as thi..."
+       ]
+      }
+     ]
+    },
+    "duplicate_options": {
+     "label": "the same answer offered twice",
+     "total": 20,
+     "detail": [
+      {
+       "detail": "items offering the same answer twice (of 5000)",
+       "count": 20,
+       "examples": [
+        "476a3ecd-7c42-4c85-9982-1ce80c95ab82: 'mean - mode/ sd' appears 2x",
+        "9f553c15-928f-41f8-8e94-021521702b9b: 'upper socioeconomic class' appears 2x",
+        "6d893f23-4404-4711-97df-e266c407ecdc: 'dhea' appears 2x",
+        "1154e512-eec5-4eae-b944-3de530532c4e: 'sample registration system' appears 2x",
+        "deb53386-ca4b-48e0-b6de-489537df647b: 'vit-d deficiency' appears 2x"
+       ]
+      },
+      {
+       "detail": "items where two options are both the keyed answer",
+       "count": 8,
+       "examples": [
+        "476a3ecd-7c42-4c85-9982-1ce80c95ab82: key B points at text offered twice",
+        "9f553c15-928f-41f8-8e94-021521702b9b: key B points at text offered twice",
+        "1154e512-eec5-4eae-b944-3de530532c4e: key A points at text offered twice",
+        "0be9175d-db8c-4da5-840c-38cb1060028d: key B points at text offered twice",
+        "c5b72144-dbe1-47a6-8312-cdb42994bb01: key A points at text offered twice"
+       ]
+      }
+     ]
+    },
+    "placeholder_options": {
+     "label": "padded with a filler choice",
+     "total": 71,
+     "detail": [
+      {
+       "detail": "items padded with a filler option",
+       "count": 71,
+       "examples": [
+        "08255d75-8015-4389-b7ce-7621634c98d2: ['D']",
+        "de848149-c145-4341-95fd-5e7fb647e705: ['D']",
+        "3dc0dd82-3432-4b61-ad9f-a773a732b840: ['D']",
+        "0c4491bc-9574-43c6-96b0-788752754133: ['D']",
+        "2773c7ba-b414-43d6-809b-51fb6e2c106e: ['D']"
+       ]
+      },
+      {
+       "detail": "items whose key IS the filler option",
+       "count": 6,
+       "examples": [
+        "6b4bcf23-327e-462a-8d79-d800eaff5e89: key D is 'None', so the answer is not offered",
+        "a2bd8ecf-4d4f-4b70-8555-0016e509cea9: key D is 'None', so the answer is not offered",
+        "0f1909b4-9e8a-4be9-9b38-f9bd0aa22dfe: key D is 'None', so the answer is not offered",
+        "afe00c40-a00f-4ef1-9946-1dda84842754: key D is 'NONE', so the answer is not offered",
+        "74fdbb59-a63e-483a-ac26-7190bcb19523: key D is 'None', so the answer is not offered"
+       ]
+      }
+     ]
+    },
+    "unreadable_options": {
+     "label": "options that are markup with no text",
+     "total": 1,
+     "detail": [
+      {
+       "detail": "items with two or more text-free options",
+       "count": 1,
+       "examples": [
+        "0be9175d-db8c-4da5-840c-38cb1060028d: 3 of 4 options are markup with no text (['A', 'B', 'C'])"
+       ]
+      }
+     ]
+    },
+    "key_not_offered": {
+     "label": "the key names no offered option",
+     "total": 0,
+     "detail": []
+    },
+    "multi_answer_keys": {
+     "label": "select-all items keyed as a list",
+     "total": 0,
+     "detail": []
+    },
+    "duplicate_questions": {
+     "label": "the same question more than once",
+     "total": 0,
+     "detail": []
+    },
+    "key_conflicts": {
+     "label": "identical questions whose keys disagree",
+     "total": 8,
+     "detail": [
+      {
+       "detail": "identical stems whose keys disagree",
+       "count": 8,
+       "examples": []
+      },
+      {
+       "detail": "  different answer",
+       "count": 7,
+       "examples": [
+        "['b3d1eb6c-3909-4011-ad10-d55538b81456', 'c997a4aa-bcbf-4f5c-8e24-e40ac6c86cbb']: ['clostridium perfringens', 'clostridium welchii'] -- naglers reaction is shown by...",
+        "['a2bd8ecf-4d4f-4b70-8555-0016e509cea9', 'befccb93-a1fc-4f0e-a081-96fddab45483']: ['factor v leiden deficiency', 'none'] -- all are hypercoagulable states except...",
+        "['df87620b-8512-4b3f-9f75-f44c1bd2358e', 'ee7b2ef8-d20d-41f6-86b5-775f30c80e56']: ['onchocerca', 'oncocerca volvulus'] -- river blindness is caused by...",
+        "['6f63a8e7-577e-4d6c-9be0-c23f4537574c', 'a0ba7c38-42ad-4c8a-8293-a146658bf3ca']: ['reverse spitting of s2', 'reverse spliting of s2'] -- true about vsd are all except...",
+        "['27021304-6316-4b34-903a-79819c835f76', '5231c88b-72d2-458c-84c2-0054e526725b']: ['chlamydia trachomatis', 'trachoma'] -- inclusion conjunctivitis is caused by..."
+       ]
+      },
+      {
+       "detail": "  spacing or punctuation only",
+       "count": 1,
+       "examples": []
+      }
+     ]
+    }
+   },
+   "keys_published": true
   },
   {
    "split": "GBaker/MedQA-USMLE-4-options/default/test",
@@ -520,10 +1217,117 @@
   {
    "split": "adlbh/PediatricsMQA/tqa/test",
    "rows_in_split": 3417,
-   "rows_read": 0,
-   "complete": false,
-   "error": "https://datasets-server.huggingface.co/rows?dataset=adlbh%2FPediatricsMQA&config=tqa&split=test&offset=1600&length=100: gave up after 5 tries (HTTP 429)",
-   "findings": {}
+   "rows_read": 3417,
+   "complete": true,
+   "error": null,
+   "findings": {
+    "corrupted_text": {
+     "label": "letters deleted inside words",
+     "total": 0,
+     "detail": []
+    },
+    "duplicate_options": {
+     "label": "the same answer offered twice",
+     "total": 5,
+     "detail": [
+      {
+       "detail": "items offering the same answer twice (of 3417)",
+       "count": 5,
+       "examples": [
+        "586d1bb5-0887-42c6-9505-85761eaf540d: 'and c' appears 2x",
+        "78257ad7-6aed-4b71-b54e-689a5c600262: 'paediatric phaeochromocytoma exhibits a familial pattern in ' appears 2x",
+        "7512404c-b235-41b8-be56-dc71e2939a5c: 'aspiration of the irrigant, trocar site closure, and a water' appears 2x",
+        "0cba82a1-44d0-4fcc-ba3b-5f871271213d: 'centration' appears 2x",
+        "d66e0980-90a3-437c-8f27-ca6c129817d2: '12 to 18' appears 2x"
+       ]
+      },
+      {
+       "detail": "items where two options are both the keyed answer",
+       "count": 1,
+       "examples": [
+        "d66e0980-90a3-437c-8f27-ca6c129817d2: key A points at text offered twice"
+       ]
+      }
+     ]
+    },
+    "placeholder_options": {
+     "label": "padded with a filler choice",
+     "total": 199,
+     "detail": [
+      {
+       "detail": "items padded with a filler option",
+       "count": 199,
+       "examples": [
+        "d7c89303-8afe-4802-bb3c-5de1c6e00edb: ['E']",
+        "e2318b7c-caa5-423a-82b8-cfc46e03bbca: ['E']",
+        "b59e9946-975c-4e4d-960e-b0d50f9f56ac: ['E']",
+        "a5c5c955-e402-4c82-a4fb-76694c8ac426: ['E']",
+        "1ff916c8-db65-4430-9cc6-f0ee4c96ad90: ['E']"
+       ]
+      }
+     ]
+    },
+    "unreadable_options": {
+     "label": "options that are markup with no text",
+     "total": 0,
+     "detail": []
+    },
+    "key_not_offered": {
+     "label": "the key names no offered option",
+     "total": 0,
+     "detail": []
+    },
+    "multi_answer_keys": {
+     "label": "select-all items keyed as a list",
+     "total": 0,
+     "detail": []
+    },
+    "duplicate_questions": {
+     "label": "the same question more than once",
+     "total": 62,
+     "detail": [
+      {
+       "detail": "stems appearing more than once",
+       "count": 62,
+       "examples": [
+        "4x: which statement below is incorrect?... (bdd4b095-1a3c-4fbd-bf4c-b3a92a5b9ef2, ea4dde90-cef8-4a2d-8939-b4025a413138, 76f2b725-d540-4eb9-b961-3ec9eb4c3bda, 57b9d99c-162e-4d1e-80bc-707654e311a4)",
+        "2x: which statement about crohn\u2019s disease is incorrect?... (8b5dde87-2b43-465d-aebb-cdc512f01b8a, a11b6d41-b34d-4e2c-b255-3051f97db43a)",
+        "2x: which statement about colonic polyps is correct?... (38e99c49-8aba-476b-a5ff-ac1cd702fb12, 89492f0f-2059-48f5-8034-fd7d7f484df6)",
+        "3x: which statement below is correct?... (88f396bb-4e20-4268-8156-ca0c31c39177, 62fa143a-b569-44d5-919d-ae4d2cda2730, a69264a9-0fa8-49e5-8bdb-73fdf8378918)",
+        "2x: which of the following is not a known cutaneous infection or infestation affecting pediatr... (c5fdb6be-97ed-49a0-8de8-83a0e94eadf3, 164e36f5-2721-4c31-a04d-f5c1d114c046)"
+       ]
+      },
+      {
+       "detail": "rows that are a repeat of an earlier row",
+       "count": 73,
+       "examples": []
+      }
+     ]
+    },
+    "key_conflicts": {
+     "label": "identical questions whose keys disagree",
+     "total": 7,
+     "detail": [
+      {
+       "detail": "identical stems whose keys disagree",
+       "count": 7,
+       "examples": []
+      },
+      {
+       "detail": "  different answer",
+       "count": 7,
+       "examples": [
+        "['57b9d99c-162e-4d1e-80bc-707654e311a4', '76f2b725-d540-4eb9-b961-3ec9eb4c3bda']: ['fetal loss resulting from sampling procedures', 'if parents were cohabitating when the child w', 'in north america, children with stage ii tumo', 'urge syndrome is a condition present from bir'] -- which statement below is incorrect...",
+        "['8b5dde87-2b43-465d-aebb-cdc512f01b8a', 'a11b6d41-b34d-4e2c-b255-3051f97db43a']: ['caseating granulomas', 'complete removal of the colon eliminates panc'] -- which statement about crohns disease is incorrect...",
+        "['38e99c49-8aba-476b-a5ff-ac1cd702fb12', '89492f0f-2059-48f5-8034-fd7d7f484df6']: ['adenomatous polyps can become cancerous.', 'colorectal carcinoma will inevitably occur in'] -- which statement about colonic polyps is correct...",
+        "['62fa143a-b569-44d5-919d-ae4d2cda2730', '88f396bb-4e20-4268-8156-ca0c31c39177']: ['approximately 20% of children aged 4 to 6 yea', 'bladder dysfunction assessment requires a com', 'chorion-amnion membrane separation is more fr'] -- which statement below is correct...",
+        "['74b3a2c9-a5fe-4ccb-be52-b4c8d2f8126f', '895f3748-06ac-468b-9731-db4729735fe2']: ['nephrotic syndrome---penicillin', 'proximal rta----trimethoprim', 'tinea cruris: infection of the axilla'] -- which of the following associations is not correct..."
+       ]
+      }
+     ]
+    }
+   },
+   "keys_published": true
   }
  ]
 }
