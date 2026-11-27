@@ -206,10 +206,24 @@ def rt_deletions(rows: Iterable[Mapping[str, str]], *, id_column: str = "id") ->
     return findings
 
 
-def _parse_options(raw: str | None) -> dict[str, str]:
-    """Options arrive as a python dict literal in a CSV cell. literal_eval, not
-    eval: the file is data, and data does not get to run."""
-    if not raw:
+def _parse_options(raw: object) -> dict[str, str]:
+    """The option set, however this source carries it.
+
+    From a CSV it is a python dict literal in a cell, so it needs parsing, and
+    literal_eval is used rather than eval because the file is data and data
+    does not get to run. Straight off the Hugging Face datasets-server the same
+    field is already a parsed dict or list, so it is taken as is. Both paths
+    matter: the checks run against the committed extracts and against live
+    rows, and they must not disagree about what an item offers.
+    """
+    if raw is None or raw == "":
+        return {}
+    if isinstance(raw, dict):
+        return {str(k).strip(): str(v) for k, v in raw.items()}
+    if isinstance(raw, (list, tuple)):
+        letters = "ABCDEFGHIJKLMNOP"
+        return {letters[i]: str(v) for i, v in enumerate(raw) if i < len(letters)}
+    if not isinstance(raw, str):
         return {}
     try:
         parsed = ast.literal_eval(raw)
@@ -801,6 +815,36 @@ def key_conflicts(
     for why, n in reasons.most_common():
         findings.append(Finding("key_conflicts", f"  {why}", n, real if why == "different answer" else []))
     return findings
+
+
+def keys_are_published(rows: Sequence[Mapping[str, str]], *, threshold: float = 0.95) -> bool:
+    """Does this split ship its answer keys at all?
+
+    Held-out test splits commonly withhold them, and they do not all say so the
+    same way: MedMCQA's test split carries `cop = -1` on every row. A key check
+    run over such a split flags 100% of it, which is not a finding about the
+    data, it is the scanner failing to notice there is nothing to check.
+
+    So: if almost no row resolves to an option, the split is unlabelled and the
+    key-dependent checks are skipped and reported as not applicable. The
+    threshold is high rather than exact because a split can be labelled and
+    still carry a few broken keys, which is the thing worth reporting.
+    """
+    considered = resolved = 0
+    for row in rows:
+        options = options_for(row)
+        if not options:
+            continue
+        considered += 1
+        letter, _ = resolve_key(row, options)
+        if letter is not None:
+            resolved += 1
+    if considered == 0:
+        return False
+    return (resolved / considered) >= (1 - threshold)
+
+
+KEY_DEPENDENT = frozenset({"key_not_offered", "key_conflicts", "multi_answer_keys"})
 
 
 # ---------------------------------------------------------------------------

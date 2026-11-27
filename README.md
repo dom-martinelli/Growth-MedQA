@@ -182,6 +182,55 @@ AfriMed-QA sha hashes) and share **no** id with the curated set, whose ids are
 row indices like `medmcqa::100392`. Joining on those returns zero defects for
 every check on every item, which reads exactly like a clean benchmark.
 
+### Watching the published benchmarks, not a copy of them
+
+The checks above run against extracts on a laptop, which is a snapshot. They
+also run every morning against what the benchmarks actually serve, so a defect
+introduced or repaired upstream shows up without anyone re-downloading
+anything.
+
+```
+python scripts/scan_live.py                  # the watched splits
+python scripts/scan_live.py --limit 300      # a quick pass
+python scripts/scan_live.py --only medmcqa
+```
+
+`qa/hf_source.py` reads rows from the [Hugging Face
+datasets-server](https://huggingface.co/docs/datasets-server), which serves any
+public dataset as JSON, paginated, with no API key and no download. That is
+what makes a daily check cheap: the alternative is hundreds of megabytes of
+parquet and a dependency stack, for data that is read once and discarded.
+Standard library only, so the scheduled job has nothing to install.
+
+The report is `docs/live_scan.json`, and a browsable page reads it at
+[dom-martinelli.github.io/tools/benchmark-monitor.html](https://dom-martinelli.github.io/tools/benchmark-monitor.html).
+`.github/workflows/scan.yml` runs the scan daily and commits the report **only
+when a count actually moves**, so the history records upstream changes rather
+than filling with timestamps.
+
+Three things this gets right that are easy to get wrong, each of which went
+wrong first:
+
+- **A failed read is not a clean result.** The fetch helper raises instead of
+  returning nothing, and the job exits non-zero when any split could not be
+  read. The first full pass hit HTTP 429 on three splits; it said so and went
+  red rather than publishing a report with a hole in it.
+- **A throttle is a pause, not an error.** 429 is the normal answer to reading
+  a large split unauthenticated, so it is waited out, honouring `Retry-After`.
+  Setting `HF_TOKEN` raises the limit; the job works without one and simply
+  reads less.
+- **A sample never looks like a whole split.** Every split reports how many
+  rows were read against how many exist, and the page marks the capped ones.
+  A split that withholds its answers, as MedMCQA's test split does by writing
+  `cop = -1` on every row, is reported as unlabelled rather than as 100%
+  defective, which is what the key check said before that guard existed.
+
+Only mechanical checks are published here. Every finding is a property of the
+printed item and can be re-derived by anyone from the same rows. Nothing that
+needs a model's judgement is published automatically, because an unverified
+judgement about somebody else's published work is not a thing to put on a page
+without a human reading it first.
+
 ### A note on the MedXpertQA exclusion
 
 Items excluded for having a key outside the A-E options are not an upstream
